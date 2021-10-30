@@ -1,0 +1,15 @@
+[
+    {
+        "MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPRT-1" : {
+            "destIpAddr": " " ,
+            "destinationIpPrefixLength": " ",
+            "gateway": " ",
+            "preference": " "
+        }
+    },
+    {
+        "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPRT-1" : {
+            "destIpAddr": "10.110.93.158888" 
+        }
+    }
+]

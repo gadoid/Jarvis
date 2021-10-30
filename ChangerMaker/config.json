@@ -1,0 +1,17 @@
+[
+    {
+        "MRBTS-1/TNLSVC-1/TNL-2/IPNO-1/IPRT-1" : [{
+            "destIpAddr": "10.110.95.16" ,
+            "destinationIpPrefixLength": "2",
+            "gateway": "3"
+            
+        },
+        {
+            "destIpAddr": "10.110.95.17" ,
+            "destinationIpPrefixLength": "2",
+            "gateway": "3"
+                }
+    ]
+    }
+
+]
