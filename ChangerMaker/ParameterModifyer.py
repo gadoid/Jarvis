@@ -3,6 +3,7 @@ from FileResolver import * ;
 import os ;
 import time ;
 import ast
+import re
 from collections import OrderedDict
 
 class ParameterModifyer():
@@ -43,6 +44,13 @@ class ParameterModifyer():
                     for k,v in kv.items() :
                         # 分别获取路径名，参数名和对应的值
                         targetDict = self.findDistName(self._dict,distName)
+                        if not targetDict :
+                            choice = input("未找到distName："+distName+"是否添加？")
+                            if choice.lower() == "y" :
+                                self.distNameAdd(distName)
+                            else :
+                                print("未添加参数"+distName+":"+k)
+                                continue 
                         # 传入路径名，返回对应路径名的字典（或者ID）
                         targetDict = self.findName(targetDict,k)
                         # 传入方法名，返回对应路径下，对应名称的字典
@@ -157,6 +165,7 @@ class ParameterModifyer():
                 else :
                     return i 
         print("未找到对应的distName%s"%(distName))
+        return 0 
 
     def findName(self,parameterDict,Name,ListOption=False,num=0,RDict=True):
         # SelectDicit = a["raml"]["cmData"]["managedObject"][distNameId]
@@ -173,14 +182,14 @@ class ParameterModifyer():
             for i in range (0,len(parameterDict['p'])):
                 if parameterDict['p'][i]['@name'] == Name:
                     return parameterDict['p'][i]
+                else :
+                    print("未找到对应参数")
+                    return 0
         elif 'list' in parameterDict.keys():
             NameDict = parameterDict['list']['item']
             if ListOption:
                 NameDict = parameterDict['list']['item'][num]['p']
                 for i in range (0,len(NameDict)):
-                    print(NameDict[i])
-                    print("__________")
-                    print(Name)
                     if NameDict[i]['@name'] == Name:
                         return NameDict[i]
             elif not ListOption:
@@ -188,8 +197,9 @@ class ParameterModifyer():
                 for i in range (0,len(NameDict)):
                     if NameDict[i]['@name'] == Name:
                         return NameDict[i]
-            print(ListOption)
-            print(NameDict)
+            else :
+                print("未找到对应参数")
+                return 0
 
     def ParmeterIntersection(self,SCF1,SCF2,SCFTemplate="SCFTemplate",size="SCF1",MergeOption=True):
         Dict1 = FileResolver.dictMaker(SCF1)
@@ -214,17 +224,71 @@ class ParameterModifyer():
         elif not MergeOption :
             return SCF
 
-    #def parameterAdd(self,)
+    def distNameAdd(self,distName,SCF=None):
+        classname = "@"+self.getClassName(distName)
+        if SCF :
+            return FileResolver.dictMaker(SCF).update({"@class":classname,"@distName":distName,
+            "@operation": "create","version":SCF["raml"]["cmData"]["managedObject"][0]["@version"]})
+        return self._dict.update({"@class":classname,"@distName":distName,
+            "@operation": "create","version":self._dict["raml"]["cmData"]["managedObject"][0]["@version"]})
+            
+    def NameAdd(self,dict_type,name,value,SCF=None):
+        dict_type[name] = value 
+        return dict_type
+    
+    def getClassName(self,distName):
+        num = re.search(r'[0-9]{1,}',distName).group()
+        self.btsIdChange("setting.json",num)
+        with open ("setting.json","r") as fileobject :
+            content = json.loads(fileobject.read())
+        return content[distName]
 
+    @staticmethod
+    def btsIdChange(file,newMrbtsId):
+        if isinstance(newMrbtsId,int):
+            num = str(newMrbtsId)
+        elif isinstance(newMrbtsId,str):
+            num = re.search(r'[0-9]{1,}',newMrbtsId).group()
+        else :
+            print("ID信息类型错误，请检查")
+            return
+        with open(file,"r") as scf :
+            sct = scf.read()
+            id = re.search(r'MRBTS[\-][0-9]{1,}',sct)
+            if id :
+                sct = sct.replace(id.group(),"MRBTS-"+num)
+                print("MRBTSID已修改为"+num)
+            else :
+                print("MRBTSID匹配失败")
+            id = re.search(r'NRBTS[\-][0-9]{1,}',sct)
+            if id :
+                sct = sct.replace(id.group(),"NRBTS-"+num)
+                print("NRBTSID已修改为"+num)
+            else :
+                print("NRBTSID匹配失败")
+        with open(file,"w") as scf:
+            scf.write(sct)
+    
+    def createDistClassPair(self,SCF=None):
+        if SCF :
+            dict = FileResolver.dictMaker(SCF)
+        else :
+            dict = self._dict
+        PairDict= {}
+        for ele in dict["raml"]["cmData"]["managedObject"]:
+            PairDict[ele["@distName"]] =  ele["@class"]
+        with open ("setting.json","w") as fileobejct :
+            fileobejct.write(json.dumps(PairDict))
+        print("setting文件已生成")
 
 if __name__  == "__main__" :
     os.chdir("G:\Jarvis\Jarvis\ChangerMaker")
     test = ParameterModifyer("global_configs_streams_0.250_master_CU_CNF_NSA_SCF_TDD_eCPRI_ASOD_AEUB_CU_TL102 (1).xml")
+    test.createDistClassPair(os.getcwd()+"\\test.xml")
     # test.btsIdFormat("test.xml","test1.xml")
-    test.parameterModifier(test.getplist())
+    #test.parameterModifier(test.getplist())
     
     #test.ParmeterMerge("global_configs_streams_0.250_master_CU_CNF_NSA_SCF_TDD_eCPRI_ASOD_AEUB_CU_TL102 (1).xml","test1.xml")
-    os.chdir(os.getcwd())
-    print(os.getcwd())
-    with open ("result.json","w") as ob :
-        ob.write(json.dumps(test.getdict()))
+    # with open ("result.json","w") as ob :
+    #     ob.write(json.dumps(test.getdict()))
+    #ParameterModifyer.btsIdChange("config.json",76)
