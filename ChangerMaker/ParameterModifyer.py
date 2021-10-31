@@ -73,6 +73,53 @@ class ParameterModifyer():
         print("参数修改完毕")
         return self._dict
 
+    def parameterGetter(self,fixParameterlist="cuness.json",MergeOption=False,Merfile=None):
+        """ 依照配置对传入的文件进行参数修改
+        "shouxiang.jiao@nokia-sbell.com"
+        """
+        if MergeOption :
+            self._dict = Merfile
+        if not fixParameterlist : 
+            fixParameterlist = self._fixparameterlist
+        if isinstance(fixParameterlist,str):
+            fixParameterlist = FileResolver.dictMaker(fixParameterlist)
+        for element in fixParameterlist :
+            #遍历配置文件
+            for distName,kv in element.items():
+                if isinstance(kv,dict):
+                    for k in kv.keys() :
+                        # 分别获取路径名，参数名和对应的值
+                        targetDict = self.findDistName(self._dict,distName)
+                        if not targetDict :
+                            choice = input("未找到distName："+distName+"是否添加？")
+                            if choice.lower() == "y" :
+                                self.distNameAdd(distName)
+                            else :
+                                print("未添加参数"+distName+":"+k)
+                                continue 
+                        # 传入路径名，返回对应路径名的字典（或者ID）
+                        targetDict = self.findName(targetDict,k)
+                        # 传入方法名，返回对应路径下，对应名称的字典
+                        #print(element[distName][k])
+                        element[distName][k] = targetDict['#text']
+                        # 完成赋值                   
+                elif isinstance(kv,list):
+                    for num in range (0,len(kv)) :
+                        for k in kv[num].keys() :
+                            # 分别获取路径名，参数名和对应的值
+                            targetDict = self.findDistName(self._dict,distName)
+                            # 传入路径名，返回对应路径名的字典（或者ID）
+                            print(targetDict)
+                            targetDict = self.findName(targetDict,k,True,num)
+                            # 传入方法名，返回对应路径下，对应名称的字典
+                            print(targetDict)
+                            element[distName][k] = targetDict['#text']
+                with open("testsetting.json","w") as fileobject :
+                    fileobject.write(json.dumps(fixParameterlist))
+                print("值查询完毕，已保存在config.json 中")
+                return fixParameterlist
+
+
     def ParmeterMerge(self,SCF1,SCF2,SCFTemplate="SCFTemplate",size="SCF1",MergeOption=True):
         Dict1 = FileResolver.dictMaker(SCF1)
         Dict2 = FileResolver.dictMaker(SCF2)
@@ -182,9 +229,9 @@ class ParameterModifyer():
             for i in range (0,len(parameterDict['p'])):
                 if parameterDict['p'][i]['@name'] == Name:
                     return parameterDict['p'][i]
-                else :
-                    print("未找到对应参数")
-                    return 0
+            else :
+                print("未找到对应参数")
+                return 0
         elif 'list' in parameterDict.keys():
             NameDict = parameterDict['list']['item']
             if ListOption:
@@ -283,11 +330,11 @@ class ParameterModifyer():
 
 if __name__  == "__main__" :
     os.chdir("G:\Jarvis\Jarvis\ChangerMaker")
-    test = ParameterModifyer("global_configs_streams_0.250_master_CU_CNF_NSA_SCF_TDD_eCPRI_ASOD_AEUB_CU_TL102 (1).xml")
+    test = ParameterModifyer("test.xml")
     test.createDistClassPair(os.getcwd()+"\\test.xml")
     # test.btsIdFormat("test.xml","test1.xml")
     #test.parameterModifier(test.getplist())
-    
+    test.parameterGetter()
     #test.ParmeterMerge("global_configs_streams_0.250_master_CU_CNF_NSA_SCF_TDD_eCPRI_ASOD_AEUB_CU_TL102 (1).xml","test1.xml")
     # with open ("result.json","w") as ob :
     #     ob.write(json.dumps(test.getdict()))

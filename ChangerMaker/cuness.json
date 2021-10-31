@@ -1,0 +1,12 @@
+[
+    {
+        "MRBTS-5222/NRBTS-5222/NRCELL-1" : {
+            "physCellId":"",
+            "cellTechnology":""
+        },
+        "MRBTS-5222/NRBTS-5222/NRCELLGRP-0":{
+        "nrCellList":""
+        }
+    }
+
+]

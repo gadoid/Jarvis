@@ -31,9 +31,12 @@ class Jarvis():
         6. feature模板
         """)
         message = input("请选择 ： ")
+        if message == "1" :
+            #SCFConfig()
+            pass
 
     def configJsonCreate(self):
-        
+        pass
 
 # Jarvis
 # +pull scf from qt check the difference client
