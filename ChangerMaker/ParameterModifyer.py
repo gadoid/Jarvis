@@ -8,10 +8,10 @@ from collections import OrderedDict
 from JarvisToolsBox import JarvisToolsBox
 
 class ParameterModifyer():
-    def __init__(self,filename,fixpalist="config.json") -> None:
+    def __init__(self,filename,fixpalist="tttt.json") -> None:
         self._dict = FileResolver.dictMaker(filename)
         # 读取SCF文件，转换为python字典
-        self._fixparameterlist = FileResolver.dictMaker(fixpalist)
+        self._configDict = FileResolver.dictMaker(fixpalist)
         # 读取配置文件，转换为python字典
 
     def getdict(self):
@@ -25,75 +25,75 @@ class ParameterModifyer():
         """ 获取配置文件的封装函数
         "shouxiang.jiao@nokia-sbell.com"
         """
-        return self._fixparameterlist
+        return self._configDict
         # 获取配置文件
 
     # [@distName : {name:value,name:value},{@distName : {name:value}}
 
-    def parameterModifier(self,fixParameterlist=None,MergeOption=False,Merfile=None):
+    def parameterModifier(self,configDict=None,MergeOption=False,Merfile=None):
         """ 依照配置对传入的文件进行参数修改
         "shouxiang.jiao@nokia-sbell.com"
         """
         if MergeOption :
             self._dict = Merfile
-        if not fixParameterlist : 
-            fixParameterlist = self._fixparameterlist
-        for element in fixParameterlist :
+        if not configDict : 
+            configDict = self._configDict
+        #for element in configDict :
             #遍历配置文件
-            for distName,kv in element.items():
-                if isinstance(kv,dict):
-                    for k,v in kv.items() :
+        for distName,kv in configDict.items():
+            if isinstance(kv,dict):
+                for k,v in kv.items() :
+                    # 分别获取路径名，参数名和对应的值
+                    targetDict = self.findDistName(self._dict,distName)
+                    if not targetDict :
+                        choice = input("未找到distName："+distName+"是否添加？")
+                        if choice.lower() == "y" :
+                            self.distNameAdd(distName)
+                        else :
+                            print("未添加参数"+distName+":"+k)
+                            continue 
+                    # 传入路径名，返回对应路径名的字典（或者ID）
+                    if not targetDict:
+                        continue
+                    targetDict = self.findName(targetDict,k)
+                    # 传入方法名，返回对应路径下，对应名称的字典
+                    if targetDict :
+                        targetDict['#text'] = v
+                    else :
+                        print("未找到参数"+k)
+                    # 完成赋值                   
+            elif isinstance(kv,list):
+                for num in range (0,len(kv)) :
+                    for k,v in kv[num].items() :
                         # 分别获取路径名，参数名和对应的值
                         targetDict = self.findDistName(self._dict,distName)
-                        if not targetDict :
-                            choice = input("未找到distName："+distName+"是否添加？")
-                            if choice.lower() == "y" :
-                                self.distNameAdd(distName)
-                            else :
-                                print("未添加参数"+distName+":"+k)
-                                continue 
                         # 传入路径名，返回对应路径名的字典（或者ID）
-                        if not targetDict:
+                        if not targetDict :
                             continue
-                        targetDict = self.findName(targetDict,k)
+                        targetDict = self.findName(targetDict,k,True,num)
                         # 传入方法名，返回对应路径下，对应名称的字典
-                        if targetDict :
+                        print(targetDict)
+                        if targetDict:
                             targetDict['#text'] = v
                         else :
                             print("未找到参数"+k)
-                        # 完成赋值                   
-                elif isinstance(kv,list):
-                    for num in range (0,len(kv)) :
-                        for k,v in kv[num].items() :
-                            # 分别获取路径名，参数名和对应的值
-                            targetDict = self.findDistName(self._dict,distName)
-                            # 传入路径名，返回对应路径名的字典（或者ID）
-                            if not targetDict :
-                                continue
-                            targetDict = self.findName(targetDict,k,True,num)
-                            # 传入方法名，返回对应路径下，对应名称的字典
-                            print(targetDict)
-                            if targetDict:
-                                targetDict['#text'] = v
-                            else :
-                                print("未找到参数"+k)
-                        
+                    
 
                     # 完成赋值                   
         print("参数修改完毕")
         return self._dict
 
-    def parameterGetter(self,fixParameterlist="cuness.json",MergeOption=False,Merfile=None):
+    def parameterGetter(self,configDict="cuness.json",MergeOption=False,Merfile=None):
         """ 依照配置对传入的文件进行参数修改
         "shouxiang.jiao@nokia-sbell.com"
         """
         if MergeOption :
             self._dict = Merfile
-        if not fixParameterlist : 
-            fixParameterlist = self._fixparameterlist
-        if isinstance(fixParameterlist,str):
-            fixParameterlist = FileResolver.dictMaker(fixParameterlist)
-        for element in fixParameterlist :
+        if not configDict : 
+            configDict = self._configDict
+        if isinstance(configDict,str):
+            configDict = FileResolver.dictMaker(configDict)
+        for element in configDict :
             #遍历配置文件
             for distName,kv in element.items():
                 if isinstance(kv,dict):
@@ -131,9 +131,9 @@ class ParameterModifyer():
                         else :
                             print("未找到参数"+k)
                 with open("testsetting.json","w") as fileobject :
-                    fileobject.write(json.dumps(fixParameterlist))
+                    fileobject.write(json.dumps(configDict))
                 print("值查询完毕，已保存在config.json 中")
-                return fixParameterlist
+                return configDict
 
 
     # def ParmeterMerge(self,SCF1,SCF2,SCFTemplate="SCFTemplate",size="SCF1",MergeOption=True):
@@ -242,9 +242,16 @@ class ParameterModifyer():
         #         if SelectDicit[i]['@name'] == Name:
         #             return i 
         if 'p' in parameterDict.keys():
-            for i in range (0,len(parameterDict['p'])):
-                if parameterDict['p'][i]['@name'] == Name:
-                    return parameterDict['p'][i]
+            print(parameterDict['p'])
+            if isinstance(parameterDict['p'],list):
+                for i in range (0,len(parameterDict['p'])):
+                    if parameterDict['p'][i]['@name'] == Name:
+                        print('b')
+                        return parameterDict['p'][i]
+            elif isinstance(parameterDict['p'],dict):
+                if parameterDict['p']['@name'] == Name:
+                        print('a')
+                        return parameterDict['p']
             else :
                 print("未找到对应参数")
                 return 0
@@ -256,6 +263,7 @@ class ParameterModifyer():
                     if NameDict[i]['@name'] == Name:
                         return NameDict[i]
             elif not ListOption:
+                print(parameterDict['list']['item'])
                 NameDict = parameterDict['list']['item']['p']
                 for i in range (0,len(NameDict)):
                     if NameDict[i]['@name'] == Name:
@@ -345,8 +353,8 @@ class ParameterModifyer():
 
 if __name__  == "__main__" :
     os.chdir("G:\Jarvis\Jarvis\ChangerMaker")
-    JarvisToolsBox.changeBtsId("test2.xml","config.json")
-    JarvisToolsBox.changeBtsId("test1.xml","config.json")
+    JarvisToolsBox.changeBtsId("test2.xml","tttt.json")
+    JarvisToolsBox.changeBtsId("test1.xml","tttt.json")
     JarvisToolsBox.ParameterMerageF2toF1("test2.xml","test1.xml")
 
     test = ParameterModifyer("test2.xml")
