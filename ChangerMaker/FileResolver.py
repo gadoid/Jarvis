@@ -41,4 +41,11 @@ class FileResolver():
             print(f"Change the Json file  \"{filepath}\" to Dict")
             return json.loads(file)
 
+    @staticmethod
+    def stringMaker(filepath):
+        with open (filepath,"r") as fileobject :
+            content = fileobject.read()
+        return content
+            
+
 

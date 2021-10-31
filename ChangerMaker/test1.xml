@@ -4,18 +4,18 @@
   <header>
    <log dateTime="2021-10-12T11:17:08+08:00" action="create"></log>
   </header>
-  <managedObject class="com.nokia.vdu.5g:MRBTS" distName="MRBTS-5222" operation="create" version="sBTSVDU22R1_2109_100">
+  <managedObject class="com.nokia.vdu.5g:MRBTS" distName="MRBTS-3519" operation="create" version="sBTSVDU22R1_2109_100">
    <p name="btsName">5gvDU</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.eqm:EQM" distName="MRBTS-5222/EQM-1" operation="create" version="EQMVDU22R2_2110_000"></managedObject>
-  <managedObject class="com.nokia.srbts.eqm:APEQM" distName="MRBTS-5222/EQM-1/APEQM-1" operation="create" version="EQMVDU22R2_2110_000">
+  <managedObject class="com.nokia.srbts.eqm:EQM" distName="MRBTS-3519/EQM-1" operation="create" version="EQMVDU22R2_2110_000"></managedObject>
+  <managedObject class="com.nokia.srbts.eqm:APEQM" distName="MRBTS-3519/EQM-1/APEQM-1" operation="create" version="EQMVDU22R2_2110_000">
    <p name="aldScanningInterval">30 sec</p>
    <p name="allowBbPoolRecoveryReset">true</p>
    <p name="berMajorAlarmThreshold">-12</p>
    <p name="berMinorAlarmThreshold">0</p>
    <p name="sfpOperatorMode">false</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.eqm:RMOD" distName="MRBTS-5222/EQM-1/APEQM-1/RMOD-1" operation="create" version="EQMVDU22R2_2110_000">
+  <managedObject class="com.nokia.srbts.eqm:RMOD" distName="MRBTS-3519/EQM-1/APEQM-1/RMOD-1" operation="create" version="EQMVDU22R2_2110_000">
    <p name="actPimCancellation">false</p>
    <p name="actSharedRUIndControl">false</p>
    <p name="actSnapshotCollection">false</p>
@@ -30,22 +30,22 @@
    <p name="ptpSyncRepPrd">60</p>
    <p name="serialNumberPlanned">1M213504201</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.eqm:PHYANT" distName="MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1" operation="create" version="EQMVDU22R2_2110_000"></managedObject>
-  <managedObject class="com.nokia.srbts.eqm:HWTOP" distName="MRBTS-5222/EQM-1/HWTOP-1" operation="create" version="EQMVDU22R2_2110_000"></managedObject>
-  <managedObject class="com.nokia.eqm.hw:HW" distName="MRBTS-5222/HW-1" operation="create" version="EQMHW19A_1904_002"></managedObject>
-  <managedObject class="com.nokia.eqm.hw:INVUNIT" distName="MRBTS-5222/HW-1/INVUNIT-1" operation="create" version="EQMHW19A_1904_002"></managedObject>
-  <managedObject class="com.nokia.eqm.hw:INVUNIT" distName="MRBTS-5222/HW-1/INVUNIT-2" operation="create" version="EQMHW19A_1904_002"></managedObject>
-  <managedObject class="com.nokia.srbts.mnl:MNL" distName="MRBTS-5222/MNL-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.eqm:PHYANT" distName="MRBTS-3519/EQM-1/APEQM-1/RMOD-1/PHYANT-1" operation="create" version="EQMVDU22R2_2110_000"></managedObject>
+  <managedObject class="com.nokia.srbts.eqm:HWTOP" distName="MRBTS-3519/EQM-1/HWTOP-1" operation="create" version="EQMVDU22R2_2110_000"></managedObject>
+  <managedObject class="com.nokia.eqm.hw:HW" distName="MRBTS-3519/HW-1" operation="create" version="EQMHW19A_1904_002"></managedObject>
+  <managedObject class="com.nokia.eqm.hw:INVUNIT" distName="MRBTS-3519/HW-1/INVUNIT-1" operation="create" version="EQMHW19A_1904_002"></managedObject>
+  <managedObject class="com.nokia.eqm.hw:INVUNIT" distName="MRBTS-3519/HW-1/INVUNIT-2" operation="create" version="EQMHW19A_1904_002"></managedObject>
+  <managedObject class="com.nokia.srbts.mnl:MNL" distName="MRBTS-3519/MNL-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="productVariantPlanned">5gvDU</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:AMGR" distName="MRBTS-5222/MNL-1/AMGR-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:AMGR" distName="MRBTS-3519/MNL-1/AMGR-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="btsEMRestrictedAccess">false</p>
    <p name="checkCnumPasswdExpiry">false</p>
    <p name="enableDefaultPasswdAlarm">false</p>
    <p name="minNonAlphaNumInPassword">1</p>
    <p name="minPasswordLength">8</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:LUAC" distName="MRBTS-5222/MNL-1/AMGR-1/LUAC-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:LUAC" distName="MRBTS-3519/MNL-1/AMGR-1/LUAC-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="appAdmActivated">true</p>
    <p name="appAdmLocalPasswdLastChangedTime">01.01.1970 UTC+00:00</p>
    <p name="btsAccountLockoutDuration">15</p>
@@ -60,53 +60,53 @@
    <p name="secAdmActivated">true</p>
    <p name="secAdmLocalPasswdLastChangedTime">01.01.1970 UTC+00:00</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CERTH" distName="MRBTS-5222/MNL-1/CERTH-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CMP" distName="MRBTS-5222/MNL-1/CERTH-1/CMP-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CERTH" distName="MRBTS-3519/MNL-1/CERTH-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.mnl:CMP" distName="MRBTS-3519/MNL-1/CERTH-1/CMP-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="caCertificateUpdateTime">90</p>
    <p name="neCertificateUpdateTime">30</p>
    <p name="serverHost">10.62.65.164</p>
    <p name="serverPath">pkix</p>
    <p name="serverPort">1024</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CRLH" distName="MRBTS-5222/MNL-1/CERTH-1/CRLH-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CRLH" distName="MRBTS-3519/MNL-1/CERTH-1/CRLH-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="distributionPointSource">Certificate_extension</p>
    <p name="updatePeriod">24</p>
    <p name="usageEnabled">Enabled</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CMD" distName="MRBTS-5222/MNL-1/CMD-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.mnl:MNLENT" distName="MRBTS-5222/MNL-1/MNLENT-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CMD" distName="MRBTS-3519/MNL-1/CMD-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.mnl:MNLENT" distName="MRBTS-3519/MNL-1/MNLENT-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="targetDNType">Container</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CELLMAPPING" distName="MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.mnl:LCELNR" distName="MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CHANNELGROUP" distName="MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CELLMAPPING" distName="MRBTS-3519/MNL-1/MNLENT-1/CELLMAPPING-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.mnl:LCELNR" distName="MRBTS-3519/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.mnl:CHANNELGROUP" distName="MRBTS-3519/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-3519/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="direction">TX</p>
-   <p name="resourceDN">MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
+   <p name="resourceDN">MRBTS-3519/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-2" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-3519/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-2" operation="create" version="MNLVDU22R2_2110_100">
    <p name="direction">RX</p>
-   <p name="resourceDN">MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
+   <p name="resourceDN">MRBTS-3519/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-3" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-3519/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-3" operation="create" version="MNLVDU22R2_2110_100">
    <p name="direction">TX</p>
-   <p name="resourceDN">MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
+   <p name="resourceDN">MRBTS-3519/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-4" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-3519/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-4" operation="create" version="MNLVDU22R2_2110_100">
    <p name="direction">RX</p>
-   <p name="resourceDN">MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
+   <p name="resourceDN">MRBTS-3519/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-5" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-3519/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-5" operation="create" version="MNLVDU22R2_2110_100">
    <p name="direction">TX</p>
-   <p name="resourceDN">MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
+   <p name="resourceDN">MRBTS-3519/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-6" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CHANNEL" distName="MRBTS-3519/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-6" operation="create" version="MNLVDU22R2_2110_100">
    <p name="direction">TX</p>
-   <p name="resourceDN">MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
+   <p name="resourceDN">MRBTS-3519/EQM-1/APEQM-1/RMOD-1/PHYANT-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CERTHENT" distName="MRBTS-5222/MNL-1/MNLENT-1/CERTHENT-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CUPLANEFHNW" distName="MRBTS-5222/MNL-1/MNLENT-1/CUPLANEFHNW-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.mnl:FEATCADM" distName="MRBTS-5222/MNL-1/MNLENT-1/FEATCADM-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CERTHENT" distName="MRBTS-3519/MNL-1/MNLENT-1/CERTHENT-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.mnl:CUPLANEFHNW" distName="MRBTS-3519/MNL-1/MNLENT-1/CUPLANEFHNW-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.mnl:FEATCADM" distName="MRBTS-3519/MNL-1/MNLENT-1/FEATCADM-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="actAldSwUpdate">false</p>
    <p name="actAntennaPathDelayMeasurement">false</p>
    <p name="actCli">false</p>
@@ -132,7 +132,7 @@
    <p name="rfSharingEnabled">false</p>
    <p name="systemAcctPermEnable">false</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:FMCADM" distName="MRBTS-5222/MNL-1/MNLENT-1/FMCADM-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:FMCADM" distName="MRBTS-3519/MNL-1/MNLENT-1/FMCADM-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="actAlarmsInTestDedicatedState">true</p>
    <p name="actCategoryAlarms">true</p>
    <p name="actForceAutoReset">false</p>
@@ -148,39 +148,39 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:MPLANENW" distName="MRBTS-5222/MNL-1/MNLENT-1/MPLANENW-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:MPLANENW" distName="MRBTS-3519/MNL-1/MNLENT-1/MPLANENW-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="actEnableTLSv13">true</p>
    <p name="mPlaneDscp">30</p>
-   <p name="mPlaneIpv4AddressDN">MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPIF-1/IPADDRESSV4-1</p>
+   <p name="mPlaneIpv4AddressDN">MRBTS-3519/TNLSVC-1/TNL-1/IPNO-1/IPIF-1/IPADDRESSV4-1</p>
    <p name="oamTls">off</p>
    <p name="tls11Enabled">true</p>
    <p name="tls12CbcCipherDisabled">true</p>
    <p name="tls12Enabled">true</p>
    <p name="tls12RsaKExDisabled">false</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:PMCADM" distName="MRBTS-5222/MNL-1/MNLENT-1/PMCADM-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:PMCADM" distName="MRBTS-3519/MNL-1/MNLENT-1/PMCADM-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="reportingIntervalPm">60min</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:SECADM" distName="MRBTS-5222/MNL-1/MNLENT-1/SECADM-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:SECADM" distName="MRBTS-3519/MNL-1/MNLENT-1/SECADM-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="loginBannerText">You are about to access a private system. This system is for the use of authorized users only. All connections are logged to the extent and by means acceptable by the local legislation. Any unauthorized access or access attempts may be punished to the fullest extent possible under the applicable local legislation.</p>
    <p name="passwdHistoryLength">0</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:SYNC" distName="MRBTS-5222/MNL-1/MNLENT-1/SYNC-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:SYNC" distName="MRBTS-3519/MNL-1/MNLENT-1/SYNC-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="manualFrameTimingAdjustment">0</p>
    <p name="profileType">RAC</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:SYNC" distName="MRBTS-5222/MNL-1/MNLENT-1/SYNC-2" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:SYNC" distName="MRBTS-3519/MNL-1/MNLENT-1/SYNC-2" operation="create" version="MNLVDU22R2_2110_100">
    <p name="manualFrameTimingAdjustment">0</p>
    <p name="profileType">RU</p>
    <list name="targetDNList">
-    <p>MRBTS-5222/EQM-1/APEQM-1/RMOD-1</p>
+    <p>MRBTS-3519/EQM-1/APEQM-1/RMOD-1</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:CLOCK" distName="MRBTS-5222/MNL-1/MNLENT-1/SYNC-2/CLOCK-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.mnl:TOP" distName="MRBTS-5222/MNL-1/MNLENT-1/SYNC-2/CLOCK-1/TOP-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:CLOCK" distName="MRBTS-3519/MNL-1/MNLENT-1/SYNC-2/CLOCK-1" operation="create" version="MNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.mnl:TOP" distName="MRBTS-3519/MNL-1/MNLENT-1/SYNC-2/CLOCK-1/TOP-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="topDomainNumber">24</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:TOPP" distName="MRBTS-5222/MNL-1/MNLENT-1/SYNC-2/CLOCK-1/TOP-1/TOPP-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:TOPP" distName="MRBTS-3519/MNL-1/MNLENT-1/SYNC-2/CLOCK-1/TOP-1/TOPP-1" operation="create" version="MNLVDU22R2_2110_100">
    <list name="acceptedClockClass">
     <p>6</p>
     <p>7</p>
@@ -194,14 +194,14 @@
    </list>
    <p name="topStandardProfile">G.8275.1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.mnl:TRBLCADM" distName="MRBTS-5222/MNL-1/MNLENT-1/TRBLCADM-1" operation="create" version="MNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.mnl:TRBLCADM" distName="MRBTS-3519/MNL-1/MNLENT-1/TRBLCADM-1" operation="create" version="MNLVDU22R2_2110_100">
    <p name="actCoreDumpFileCollection">true</p>
    <p name="actInternalTrace">true</p>
    <p name="diagSnapDestination">netact</p>
    <p name="selfCancelingTimerForFault6450">0</p>
    <p name="snapshotUploadDelayForFault6450">0</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRBTS" distName="MRBTS-5222/NRBTS-5222" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRBTS" distName="MRBTS-3519/NRBTS-3519" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="act3gppBL22R2">false</p>
    <p name="actCarrierAggregation">false</p>
    <p name="actCellTraceReport">false</p>
@@ -352,7 +352,7 @@
    <p name="ulsVoipPacketSize">680</p>
    <p name="variableSourceUdpPortEnabled">false</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:BWP_PROFILE" distName="MRBTS-5222/NRBTS-5222/BWP_PROFILE-0" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:BWP_PROFILE" distName="MRBTS-3519/NRBTS-3519/BWP_PROFILE-0" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="bwpType">initial</p>
    <list name="locationAndBandwidthDl">
     <item>
@@ -367,7 +367,7 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:PDCCH" distName="MRBTS-5222/NRBTS-5222/BWP_PROFILE-0/PDCCH-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:PDCCH" distName="MRBTS-3519/NRBTS-3519/BWP_PROFILE-0/PDCCH-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="alSelection">static</p>
    <p name="dciDedicatedAggregationLevel">AL4</p>
    <p name="dciPagingAggregationLevel">AL4</p>
@@ -376,8 +376,8 @@
    <p name="dciSiAggregationLevel">AL4</p>
    <p name="downgradeAL16toAL8">notAllowed</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:PDCCH_CONFIG_COMMON" distName="MRBTS-5222/NRBTS-5222/BWP_PROFILE-0/PDCCH-1/PDCCH_CONFIG_COMMON-1" operation="create" version="NRBTSVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:BWP_PROFILE" distName="MRBTS-5222/NRBTS-5222/BWP_PROFILE-44" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:PDCCH_CONFIG_COMMON" distName="MRBTS-3519/NRBTS-3519/BWP_PROFILE-0/PDCCH-1/PDCCH_CONFIG_COMMON-1" operation="create" version="NRBTSVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.nrbts:BWP_PROFILE" distName="MRBTS-3519/NRBTS-3519/BWP_PROFILE-44" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="bwpType">dedicated</p>
    <list name="locationAndBandwidthDl">
     <item>
@@ -392,7 +392,7 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:PDCCH" distName="MRBTS-5222/NRBTS-5222/BWP_PROFILE-44/PDCCH-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:PDCCH" distName="MRBTS-3519/NRBTS-3519/BWP_PROFILE-44/PDCCH-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="alSelection">static</p>
    <p name="dciDedicatedAggregationLevel">AL4</p>
    <p name="dciPagingAggregationLevel">AL4</p>
@@ -401,7 +401,7 @@
    <p name="dciSiAggregationLevel">AL4</p>
    <p name="downgradeAL16toAL8">notAllowed</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:PDCCH_CONFIG_COMMON" distName="MRBTS-5222/NRBTS-5222/BWP_PROFILE-44/PDCCH-1/PDCCH_CONFIG_COMMON-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:PDCCH_CONFIG_COMMON" distName="MRBTS-3519/NRBTS-3519/BWP_PROFILE-44/PDCCH-1/PDCCH_CONFIG_COMMON-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <list name="searchSpaceCommon">
     <item>
      <p name="coresetId">0</p>
@@ -419,7 +419,7 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:PDCCH_CONFIG_DEDICATED" distName="MRBTS-5222/NRBTS-5222/BWP_PROFILE-44/PDCCH-1/PDCCH_CONFIG_DEDICATED-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:PDCCH_CONFIG_DEDICATED" distName="MRBTS-3519/NRBTS-3519/BWP_PROFILE-44/PDCCH-1/PDCCH_CONFIG_DEDICATED-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <list name="coresetDedicated">
     <item>
      <p name="cRbStart">0</p>
@@ -464,10 +464,10 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:PDSCH" distName="MRBTS-5222/NRBTS-5222/BWP_PROFILE-44/PDSCH-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:PDSCH" distName="MRBTS-3519/NRBTS-3519/BWP_PROFILE-44/PDSCH-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="pdschRat0RbgConfig">config1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRCELL" distName="MRBTS-5222/NRBTS-5222/NRCELL-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRCELL" distName="MRBTS-3519/NRBTS-3519/NRCELL-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actAdaptVoipTbs">false</p>
    <p name="actAdaptiveSr">false</p>
    <p name="actAperCsi">false</p>
@@ -531,11 +531,11 @@
    <p name="cellBarred">notBarred</p>
    <list name="cellBwpList">
     <item>
-     <p name="bwpDN">MRBTS-5222/NRBTS-5222/BWP_PROFILE-0</p>
+     <p name="bwpDN">MRBTS-3519/NRBTS-3519/BWP_PROFILE-0</p>
      <p name="cellBwpId">0</p>
     </item>
     <item>
-     <p name="bwpDN">MRBTS-5222/NRBTS-5222/BWP_PROFILE-44</p>
+     <p name="bwpDN">MRBTS-3519/NRBTS-3519/BWP_PROFILE-44</p>
      <p name="cellBwpId">1</p>
     </item>
    </list>
@@ -657,7 +657,7 @@
    <p name="puschMappingType">TypeB</p>
    <p name="qRxLevMin">-65</p>
    <list name="rModDNList">
-    <p>MRBTS-5222/EQM-1/APEQM-1/RMOD-1</p>
+    <p>MRBTS-3519/EQM-1/APEQM-1/RMOD-1</p>
    </list>
    <p name="raContentionResolutionTmr">sf64</p>
    <p name="raResponseWindow">sl20</p>
@@ -745,7 +745,7 @@
    <p name="ullaIniMcs">27</p>
    <p name="zeroCorrelationZoneConfig">13</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRCELLGRP" distName="MRBTS-5222/NRBTS-5222/NRCELLGRP-0" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRCELLGRP" distName="MRBTS-3519/NRBTS-3519/NRCELLGRP-0" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actLoadCsiPeriodicity">false</p>
    <p name="actNackDtxFloodControlDetection">true</p>
    <p name="actProactUlScheduling">false</p>
@@ -777,311 +777,311 @@
    <p name="spCellChangeEnabled">false</p>
    <p name="ssBurstSetPeriod">20</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-1</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-1</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">20</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-10" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-10" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-2</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-2</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-2</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">1</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-11" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-11" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-2</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-2</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-2</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">1</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-12" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-12" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-2</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-2</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-2</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">1</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-13" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-13" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-2</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-2</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-2</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">1</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-14" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-14" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-2</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-2</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-2</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">1</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-2" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-2" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-1</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-1</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">40</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-3" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-3" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-1</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-1</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">20</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-4" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-4" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-1</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-1</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">10</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-5" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-5" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-1</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-1</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">5</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-6" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-6" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-1</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-1</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">1</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-7" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-7" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-1</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-1</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">40</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-8" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-8" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-1</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-1</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">30</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-5222/NRBTS-5222/NRDRB-9" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB" distName="MRBTS-3519/NRBTS-3519/NRDRB-9" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actDddsReduction">false</p>
    <p name="discardTimer">infinity</p>
    <p name="dlFlowControlAlgo">3gppFlowControl</p>
    <p name="dscp">0</p>
    <p name="durationThresDiscard">50</p>
    <p name="maxDddsPeriodCpuOvld">40</p>
-   <p name="nrDrbMacDN">MRBTS-5222/NRBTS-5222/NRDRB_MAC-1</p>
-   <p name="nrDrbRlcAmDN">MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1</p>
+   <p name="nrDrbMacDN">MRBTS-3519/NRBTS-3519/NRDRB_MAC-1</p>
+   <p name="nrDrbRlcAmDN">MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1</p>
    <p name="resType">nonGBR</p>
    <p name="rlcMode">RLC_AM</p>
    <p name="schedulWeight">15</p>
    <p name="volThresDiscard">100</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-5222/NRBTS-5222/NRDRB_5QI-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-3519/NRBTS-3519/NRDRB_5QI-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <list name="fiveqiValueList">
     <p>5</p>
    </list>
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-10</p>
-   <p name="nrPlmnDN">MRBTS-5222/NRBTS-5222/NRPLMN-1</p>
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-10</p>
+   <p name="nrPlmnDN">MRBTS-3519/NRBTS-3519/NRPLMN-1</p>
    <list name="snssaiDNList">
-    <p>MRBTS-5222/NRBTS-5222/SNSSAI-1</p>
+    <p>MRBTS-3519/NRBTS-3519/SNSSAI-1</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-5222/NRBTS-5222/NRDRB_5QI-2" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-3519/NRBTS-3519/NRDRB_5QI-2" operation="create" version="NRBTSVDU22R2_2110_100">
    <list name="fiveqiValueList">
     <p>5</p>
    </list>
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-11</p>
-   <p name="nrPlmnDN">MRBTS-5222/NRBTS-5222/NRPLMN-2</p>
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-11</p>
+   <p name="nrPlmnDN">MRBTS-3519/NRBTS-3519/NRPLMN-2</p>
    <list name="snssaiDNList">
-    <p>MRBTS-5222/NRBTS-5222/SNSSAI-2</p>
+    <p>MRBTS-3519/NRBTS-3519/SNSSAI-2</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-5222/NRBTS-5222/NRDRB_5QI-3" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-3519/NRBTS-3519/NRDRB_5QI-3" operation="create" version="NRBTSVDU22R2_2110_100">
    <list name="fiveqiValueList">
     <p>5</p>
    </list>
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-12</p>
-   <p name="nrPlmnDN">MRBTS-5222/NRBTS-5222/NRPLMN-3</p>
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-12</p>
+   <p name="nrPlmnDN">MRBTS-3519/NRBTS-3519/NRPLMN-3</p>
    <list name="snssaiDNList">
-    <p>MRBTS-5222/NRBTS-5222/SNSSAI-3</p>
+    <p>MRBTS-3519/NRBTS-3519/SNSSAI-3</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-5222/NRBTS-5222/NRDRB_5QI-4" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-3519/NRBTS-3519/NRDRB_5QI-4" operation="create" version="NRBTSVDU22R2_2110_100">
    <list name="fiveqiValueList">
     <p>5</p>
    </list>
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-13</p>
-   <p name="nrPlmnDN">MRBTS-5222/NRBTS-5222/NRPLMN-4</p>
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-13</p>
+   <p name="nrPlmnDN">MRBTS-3519/NRBTS-3519/NRPLMN-4</p>
    <list name="snssaiDNList">
-    <p>MRBTS-5222/NRBTS-5222/SNSSAI-4</p>
+    <p>MRBTS-3519/NRBTS-3519/SNSSAI-4</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-5222/NRBTS-5222/NRDRB_5QI-5" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_5QI" distName="MRBTS-3519/NRBTS-3519/NRDRB_5QI-5" operation="create" version="NRBTSVDU22R2_2110_100">
    <list name="fiveqiValueList">
     <p>5</p>
    </list>
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-14</p>
-   <p name="nrPlmnDN">MRBTS-5222/NRBTS-5222/NRPLMN-5</p>
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-14</p>
+   <p name="nrPlmnDN">MRBTS-3519/NRBTS-3519/NRPLMN-5</p>
    <list name="snssaiDNList">
-    <p>MRBTS-5222/NRBTS-5222/SNSSAI-5</p>
+    <p>MRBTS-3519/NRBTS-3519/SNSSAI-5</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_MAC" distName="MRBTS-5222/NRBTS-5222/NRDRB_MAC-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_MAC" distName="MRBTS-3519/NRBTS-3519/NRDRB_MAC-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="lcgid">1</p>
    <p name="prioritisedBitRate">16kBps</p>
    <p name="schedulPrio">12</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_MAC" distName="MRBTS-5222/NRBTS-5222/NRDRB_MAC-2" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_MAC" distName="MRBTS-3519/NRBTS-3519/NRDRB_MAC-2" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="lcgid">1</p>
    <p name="prioritisedBitRate">16kBps</p>
    <p name="schedulPrio">12</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-5222/NRBTS-5222/NRDRB_QCI-1" operation="create" version="NRBTSVDU22R2_2110_100">
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-2</p>
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-3519/NRBTS-3519/NRDRB_QCI-1" operation="create" version="NRBTSVDU22R2_2110_100">
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-2</p>
    <list name="qciValueList">
     <p>5</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-5222/NRBTS-5222/NRDRB_QCI-2" operation="create" version="NRBTSVDU22R2_2110_100">
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-3</p>
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-3519/NRBTS-3519/NRDRB_QCI-2" operation="create" version="NRBTSVDU22R2_2110_100">
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-3</p>
    <list name="qciValueList">
     <p>6</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-5222/NRBTS-5222/NRDRB_QCI-3" operation="create" version="NRBTSVDU22R2_2110_100">
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-4</p>
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-3519/NRBTS-3519/NRDRB_QCI-3" operation="create" version="NRBTSVDU22R2_2110_100">
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-4</p>
    <list name="qciValueList">
     <p>7</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-5222/NRBTS-5222/NRDRB_QCI-4" operation="create" version="NRBTSVDU22R2_2110_100">
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-5</p>
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-3519/NRBTS-3519/NRDRB_QCI-4" operation="create" version="NRBTSVDU22R2_2110_100">
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-5</p>
    <list name="qciValueList">
     <p>8</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-5222/NRBTS-5222/NRDRB_QCI-5" operation="create" version="NRBTSVDU22R2_2110_100">
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-6</p>
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-3519/NRBTS-3519/NRDRB_QCI-5" operation="create" version="NRBTSVDU22R2_2110_100">
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-6</p>
    <list name="qciValueList">
     <p>9</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-5222/NRBTS-5222/NRDRB_QCI-6" operation="create" version="NRBTSVDU22R2_2110_100">
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-7</p>
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-3519/NRBTS-3519/NRDRB_QCI-6" operation="create" version="NRBTSVDU22R2_2110_100">
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-7</p>
    <list name="qciValueList">
     <p>69</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-5222/NRBTS-5222/NRDRB_QCI-7" operation="create" version="NRBTSVDU22R2_2110_100">
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-8</p>
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-3519/NRBTS-3519/NRDRB_QCI-7" operation="create" version="NRBTSVDU22R2_2110_100">
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-8</p>
    <list name="qciValueList">
     <p>70</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-5222/NRBTS-5222/NRDRB_QCI-8" operation="create" version="NRBTSVDU22R2_2110_100">
-   <p name="nrDrbDN">MRBTS-5222/NRBTS-5222/NRDRB-9</p>
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_QCI" distName="MRBTS-3519/NRBTS-3519/NRDRB_QCI-8" operation="create" version="NRBTSVDU22R2_2110_100">
+   <p name="nrDrbDN">MRBTS-3519/NRBTS-3519/NRDRB-9</p>
    <list name="qciValueList">
     <p>79</p>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_RLC_AM" distName="MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_RLC_AM" distName="MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="dlMaxRetxThreshold">t16</p>
    <p name="dlPollByte">kB500</p>
    <p name="dlPollPDU">p64</p>
@@ -1097,7 +1097,7 @@
    <p name="ulTProhib">ms10</p>
    <p name="ulTReassembly">ms15</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDRB_RLC_AM" distName="MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDRB_RLC_AM" distName="MRBTS-3519/NRBTS-3519/NRDRB_RLC_AM-2" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="dlMaxRetxThreshold">t32</p>
    <p name="dlPollByte">kB500</p>
    <p name="dlPollPDU">p64</p>
@@ -1113,7 +1113,7 @@
    <p name="ulTProhib">ms15</p>
    <p name="ulTReassembly">ms15</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRDU" distName="MRBTS-5222/NRBTS-5222/NRDU-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRDU" distName="MRBTS-3519/NRBTS-3519/NRDU-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="actConnectedModeMobilityCA">false</p>
    <p name="actInterNumerologyCa">true</p>
    <p name="actNonBfAndBfCa">false</p>
@@ -1122,12 +1122,12 @@
    </list>
    <list name="f1Cplane">
     <item>
-     <p name="ipV4AddressDN1">MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPIF-1/IPADDRESSV4-1</p>
+     <p name="ipV4AddressDN1">MRBTS-3519/TNLSVC-1/TNL-2/IPNO-1/IPIF-1/IPADDRESSV4-1</p>
     </item>
    </list>
    <list name="f1Uplane">
     <item>
-     <p name="ipV4AddressDN1">MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPIF-1/IPADDRESSV4-1</p>
+     <p name="ipV4AddressDN1">MRBTS-3519/TNLSVC-1/TNL-3/IPNO-1/IPIF-1/IPADDRESSV4-1</p>
     </item>
    </list>
    <p name="flexibleCAMode">MixedCAMode</p>
@@ -1138,38 +1138,38 @@
     <p>0</p>
    </list>
    <p name="remotef1CplaneIpAddr">10.107.89.12</p>
-   <p name="targetDN">MRBTS-5222/EQM-1/APEQM-1</p>
+   <p name="targetDN">MRBTS-3519/EQM-1/APEQM-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRCTRLTSDU" distName="MRBTS-5222/NRBTS-5222/NRDU-1/NRCTRLTSDU-1" operation="create" version="NRBTSVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRECPRI" distName="MRBTS-5222/NRBTS-5222/NRDU-1/NRECPRI-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRCTRLTSDU" distName="MRBTS-3519/NRBTS-3519/NRDU-1/NRCTRLTSDU-1" operation="create" version="NRBTSVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.nrbts:NRECPRI" distName="MRBTS-3519/NRBTS-3519/NRDU-1/NRECPRI-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="uPlanePcp">7</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-5222/NRBTS-5222/NRPLMN-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-3519/NRBTS-3519/NRPLMN-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="mcc">262</p>
    <p name="mnc">3</p>
    <p name="mncLength">2</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-5222/NRBTS-5222/NRPLMN-2" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-3519/NRBTS-3519/NRPLMN-2" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="mcc">0</p>
    <p name="mnc">0</p>
    <p name="mncLength">2</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-5222/NRBTS-5222/NRPLMN-3" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-3519/NRBTS-3519/NRPLMN-3" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="mcc">0</p>
    <p name="mnc">0</p>
    <p name="mncLength">2</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-5222/NRBTS-5222/NRPLMN-4" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-3519/NRBTS-3519/NRPLMN-4" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="mcc">0</p>
    <p name="mnc">0</p>
    <p name="mncLength">2</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-5222/NRBTS-5222/NRPLMN-5" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRPLMN" distName="MRBTS-3519/NRBTS-3519/NRPLMN-5" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="mcc">0</p>
    <p name="mnc">0</p>
    <p name="mncLength">2</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRPMRNL" distName="MRBTS-5222/NRBTS-5222/NRPMRNL-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRPMRNL" distName="MRBTS-3519/NRBTS-3519/NRPMRNL-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="miNrBeamforming">15min</p>
    <p name="miNrCaDu">15min</p>
    <p name="miNrCaDu01">disabled</p>
@@ -1224,7 +1224,7 @@
    <p name="tmpMiNrParam8">disabled</p>
    <p name="tmpMiNrParam9">disabled</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:NRSCTP" distName="MRBTS-5222/NRBTS-5222/NRSCTP-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:NRSCTP" distName="MRBTS-3519/NRBTS-3519/NRSCTP-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="f1SctpProfileIdOfDu">1</p>
    <list name="sctpProfile">
     <item>
@@ -1245,47 +1245,47 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-5222/NRBTS-5222/SNSSAI-1" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-3519/NRBTS-3519/SNSSAI-1" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="administrativeState">Unlocked</p>
    <list name="nrPlmnDNList">
-    <p>MRBTS-5222/NRBTS-5222/NRPLMN-1</p>
+    <p>MRBTS-3519/NRBTS-3519/NRPLMN-1</p>
    </list>
    <p name="sst">1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-5222/NRBTS-5222/SNSSAI-2" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-3519/NRBTS-3519/SNSSAI-2" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="administrativeState">Unlocked</p>
    <list name="nrPlmnDNList">
-    <p>MRBTS-5222/NRBTS-5222/NRPLMN-2</p>
+    <p>MRBTS-3519/NRBTS-3519/NRPLMN-2</p>
    </list>
    <p name="sst">128</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-5222/NRBTS-5222/SNSSAI-3" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-3519/NRBTS-3519/SNSSAI-3" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="administrativeState">Unlocked</p>
    <list name="nrPlmnDNList">
-    <p>MRBTS-5222/NRBTS-5222/NRPLMN-3</p>
+    <p>MRBTS-3519/NRBTS-3519/NRPLMN-3</p>
    </list>
    <p name="sd">0</p>
    <p name="sst">129</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-5222/NRBTS-5222/SNSSAI-4" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-3519/NRBTS-3519/SNSSAI-4" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="administrativeState">Unlocked</p>
    <list name="nrPlmnDNList">
-    <p>MRBTS-5222/NRBTS-5222/NRPLMN-4</p>
+    <p>MRBTS-3519/NRBTS-3519/NRPLMN-4</p>
    </list>
    <p name="sst">130</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-5222/NRBTS-5222/SNSSAI-5" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:SNSSAI" distName="MRBTS-3519/NRBTS-3519/SNSSAI-5" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="administrativeState">Unlocked</p>
    <list name="nrPlmnDNList">
-    <p>MRBTS-5222/NRBTS-5222/NRPLMN-5</p>
+    <p>MRBTS-3519/NRBTS-3519/NRPLMN-5</p>
    </list>
    <p name="sst">131</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.nrbts:TRACKINGAREA" distName="MRBTS-5222/NRBTS-5222/TRACKINGAREA-0" operation="create" version="NRBTSVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.nrbts:TRACKINGAREA" distName="MRBTS-3519/NRBTS-3519/TRACKINGAREA-0" operation="create" version="NRBTSVDU22R2_2110_100">
    <p name="fiveGsTac">1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNLSVC" distName="MRBTS-5222/TNLSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:PMTNLINT" distName="MRBTS-5222/TNLSVC-1/PMTNLINT-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNLSVC" distName="MRBTS-3519/TNLSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:PMTNLINT" distName="MRBTS-3519/TNLSVC-1/PMTNLINT-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="ethernetLinkInterval">15min</p>
    <p name="ipFilteringInterval">15min</p>
    <p name="ipInterfaceStatisticsInterval">disabled</p>
@@ -1298,35 +1298,35 @@
    <p name="tcpUdpStatisticsInterval">15min</p>
    <p name="vlanStatisticsInterval">15min</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-5222/TNLSVC-1/TNL-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-3519/TNLSVC-1/TNL-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="templateUsage">TRUE</p>
    <p name="userLabel">TNL-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="linkSelectorDN">MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHLK-1</p>
+  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-3519/TNLSVC-1/TNL-1/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-3519/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="linkSelectorDN">MRBTS-3519/TNLSVC-1/TNL-1/ETHSVC-1/ETHLK-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-3519/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="vlanIfName">mcplane</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-3519/TNLSVC-1/TNL-1/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="administrativeState">unlocked</p>
    <p name="underLyingInterface">oam</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-3519/TNLSVC-1/TNL-1/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="icmpDscp">10</p>
    <p name="icmpResponseEnabled">true</p>
    <p name="ndMldDscp">56</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="interfaceDN">MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1/VLANIF-1</p>
+  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-3519/TNLSVC-1/TNL-1/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="interfaceDN">MRBTS-3519/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1/VLANIF-1</p>
    <p name="ipMtu">1500</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-3519/TNLSVC-1/TNL-1/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="ipAddressAllocationMethod">DISCOVERED</p>
    <p name="uniqueIpAddressIdentifier">oam certman-server</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-3519/TNLSVC-1/TNL-1/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
    <list name="staticRoutes">
     <item>
      <p name="destIpAddr">10.107.89.80</p>
@@ -1342,40 +1342,40 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPRT-2" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-3519/TNLSVC-1/TNL-1/IPNO-1/IPRT-2" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-3519/TNLSVC-1/TNL-1/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-3519/TNLSVC-1/TNL-1/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="arpPcp">7</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-5222/TNLSVC-1/TNL-2" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-3519/TNLSVC-1/TNL-2" operation="create" version="TNLVDU22R2_2110_100">
    <p name="templateUsage">TRUE</p>
    <p name="userLabel">TNL-2</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="linkSelectorDN">MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHLK-1</p>
+  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-3519/TNLSVC-1/TNL-2/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-3519/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="linkSelectorDN">MRBTS-3519/TNLSVC-1/TNL-2/ETHSVC-1/ETHLK-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-3519/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="vlanIfName">f1cplane</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-3519/TNLSVC-1/TNL-2/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="administrativeState">unlocked</p>
    <p name="underLyingInterface">f1c</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-3519/TNLSVC-1/TNL-2/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="icmpDscp">10</p>
    <p name="icmpResponseEnabled">true</p>
    <p name="ndMldDscp">56</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="interfaceDN">MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1/VLANIF-1</p>
+  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-3519/TNLSVC-1/TNL-2/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="interfaceDN">MRBTS-3519/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1/VLANIF-1</p>
    <p name="ipMtu">1500</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-3519/TNLSVC-1/TNL-2/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="ipAddressAllocationMethod">DISCOVERED</p>
    <p name="uniqueIpAddressIdentifier">F1-C</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-3519/TNLSVC-1/TNL-2/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
    <list name="staticRoutes">
     <item>
      <p name="destIpAddr">10.107.89.0</p>
@@ -1385,49 +1385,49 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-3519/TNLSVC-1/TNL-2/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-3519/TNLSVC-1/TNL-2/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="arpPcp">7</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-5222/TNLSVC-1/TNL-3" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-3519/TNLSVC-1/TNL-3" operation="create" version="TNLVDU22R2_2110_100">
    <p name="templateUsage">TRUE</p>
    <p name="userLabel">TNL-3</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="linkSelectorDN">MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-1</p>
+  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="linkSelectorDN">MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="vlanIfName">f1uplane</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-2" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="linkSelectorDN">MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-2</p>
+  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-2" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="linkSelectorDN">MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-2</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-2/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-2/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="vlanIfName">fhucplane1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="administrativeState">unlocked</p>
    <p name="underLyingInterface">f1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-2" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-2" operation="create" version="TNLVDU22R2_2110_100">
    <p name="administrativeState">unlocked</p>
    <p name="underLyingInterface">fhuc</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-3519/TNLSVC-1/TNL-3/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="icmpDscp">10</p>
    <p name="icmpResponseEnabled">true</p>
    <p name="ndMldDscp">56</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="interfaceDN">MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1/VLANIF-1</p>
+  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-3519/TNLSVC-1/TNL-3/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="interfaceDN">MRBTS-3519/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1/VLANIF-1</p>
    <p name="ipMtu">1500</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-3519/TNLSVC-1/TNL-3/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="ipAddressAllocationMethod">DISCOVERED</p>
    <p name="uniqueIpAddressIdentifier">F1-U</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-3519/TNLSVC-1/TNL-3/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
    <list name="staticRoutes">
     <item>
      <p name="destIpAddr">10.107.89.0</p>
@@ -1443,39 +1443,39 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-3519/TNLSVC-1/TNL-3/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-3519/TNLSVC-1/TNL-3/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="arpPcp">7</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-5222/TNLSVC-1/TNL-4" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-3519/TNLSVC-1/TNL-4" operation="create" version="TNLVDU22R2_2110_100">
    <p name="templateUsage">FALSE</p>
    <p name="userLabel">TNL-4</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="linkSelectorDN">MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHLK-1</p>
+  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-3519/TNLSVC-1/TNL-4/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-3519/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="linkSelectorDN">MRBTS-3519/TNLSVC-1/TNL-4/ETHSVC-1/ETHLK-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-3519/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="vlanIfName">mcplane</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-3519/TNLSVC-1/TNL-4/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="administrativeState">unlocked</p>
    <p name="underLyingInterface">oam</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-3519/TNLSVC-1/TNL-4/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="icmpDscp">10</p>
    <p name="icmpResponseEnabled">true</p>
    <p name="ndMldDscp">56</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="interfaceDN">MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1/VLANIF-1</p>
+  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-3519/TNLSVC-1/TNL-4/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="interfaceDN">MRBTS-3519/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1/VLANIF-1</p>
    <p name="ipMtu">1500</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-3519/TNLSVC-1/TNL-4/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="ipAddressAllocationMethod">DISCOVERED</p>
    <p name="uniqueIpAddressIdentifier">oam certman-server</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-3519/TNLSVC-1/TNL-4/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
    <list name="staticRoutes">
     <item>
      <p name="destIpAddr">10.107.89.80</p>
@@ -1491,40 +1491,40 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPRT-2" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-3519/TNLSVC-1/TNL-4/IPNO-1/IPRT-2" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-3519/TNLSVC-1/TNL-4/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-3519/TNLSVC-1/TNL-4/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="arpPcp">7</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-5222/TNLSVC-1/TNL-5" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-3519/TNLSVC-1/TNL-5" operation="create" version="TNLVDU22R2_2110_100">
    <p name="templateUsage">FALSE</p>
    <p name="userLabel">TNL-5</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="linkSelectorDN">MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHLK-1</p>
+  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-3519/TNLSVC-1/TNL-5/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-3519/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="linkSelectorDN">MRBTS-3519/TNLSVC-1/TNL-5/ETHSVC-1/ETHLK-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-3519/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="vlanIfName">f1cplane</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-3519/TNLSVC-1/TNL-5/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="administrativeState">unlocked</p>
    <p name="underLyingInterface">f1c</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-3519/TNLSVC-1/TNL-5/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="icmpDscp">10</p>
    <p name="icmpResponseEnabled">true</p>
    <p name="ndMldDscp">56</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="interfaceDN">MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1/VLANIF-1</p>
+  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-3519/TNLSVC-1/TNL-5/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="interfaceDN">MRBTS-3519/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1/VLANIF-1</p>
    <p name="ipMtu">1500</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-3519/TNLSVC-1/TNL-5/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="ipAddressAllocationMethod">DISCOVERED</p>
    <p name="uniqueIpAddressIdentifier">F1-C</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-3519/TNLSVC-1/TNL-5/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
    <list name="staticRoutes">
     <item>
      <p name="destIpAddr">10.107.89.0</p>
@@ -1534,49 +1534,49 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-3519/TNLSVC-1/TNL-5/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-3519/TNLSVC-1/TNL-5/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="arpPcp">7</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-5222/TNLSVC-1/TNL-6" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNL" distName="MRBTS-3519/TNLSVC-1/TNL-6" operation="create" version="TNLVDU22R2_2110_100">
    <p name="templateUsage">FALSE</p>
    <p name="userLabel">TNL-6</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="linkSelectorDN">MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-1</p>
+  <managedObject class="com.nokia.srbts.tnl:ETHSVC" distName="MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="linkSelectorDN">MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="vlanIfName">f1uplane</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-2" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="linkSelectorDN">MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-2</p>
+  <managedObject class="com.nokia.srbts.tnl:ETHIF" distName="MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-2" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="linkSelectorDN">MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-2</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-2/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:VLANIF" distName="MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-2/VLANIF-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="vlanIfName">fhucplane1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="administrativeState">unlocked</p>
    <p name="underLyingInterface">f1</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-2" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:ETHLK" distName="MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-2" operation="create" version="TNLVDU22R2_2110_100">
    <p name="administrativeState">unlocked</p>
    <p name="underLyingInterface">fhuc</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPNO" distName="MRBTS-3519/TNLSVC-1/TNL-6/IPNO-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="icmpDscp">10</p>
    <p name="icmpResponseEnabled">true</p>
    <p name="ndMldDscp">56</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="interfaceDN">MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1/VLANIF-1</p>
+  <managedObject class="com.nokia.srbts.tnl:IPIF" distName="MRBTS-3519/TNLSVC-1/TNL-6/IPNO-1/IPIF-1" operation="create" version="TNLVDU22R2_2110_100">
+   <p name="interfaceDN">MRBTS-3519/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1/VLANIF-1</p>
    <p name="ipMtu">1500</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPADDRESSV4" distName="MRBTS-3519/TNLSVC-1/TNL-6/IPNO-1/IPIF-1/IPADDRESSV4-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="ipAddressAllocationMethod">DISCOVERED</p>
    <p name="uniqueIpAddressIdentifier">F1-U</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRT" distName="MRBTS-3519/TNLSVC-1/TNL-6/IPNO-1/IPRT-1" operation="create" version="TNLVDU22R2_2110_100">
    <list name="staticRoutes">
     <item>
      <p name="destIpAddr">10.107.89.0</p>
@@ -1592,28 +1592,23 @@
     </item>
    </list>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
-  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:IPRTV6" distName="MRBTS-3519/TNLSVC-1/TNL-6/IPNO-1/IPRTV6-1" operation="create" version="TNLVDU22R2_2110_100"></managedObject>
+  <managedObject class="com.nokia.srbts.tnl:QOS" distName="MRBTS-3519/TNLSVC-1/TNL-6/IPNO-1/QOS-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="arpPcp">7</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNLTEMPLATE" distName="MRBTS-5222/TNLSVC-1/TNLTEMPLATE-1" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNLTEMPLATE" distName="MRBTS-3519/TNLSVC-1/TNLTEMPLATE-1" operation="create" version="TNLVDU22R2_2110_100">
    <p name="templateType">OAM</p>
-   <p name="tnlDN">MRBTS-5222/TNLSVC-1/TNL-1</p>
+   <p name="tnlDN">MRBTS-3519/TNLSVC-1/TNL-1</p>
    <p name="userLabel">TRUE</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNLTEMPLATE" distName="MRBTS-5222/TNLSVC-1/TNLTEMPLATE-2" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNLTEMPLATE" distName="MRBTS-3519/TNLSVC-1/TNLTEMPLATE-2" operation="create" version="TNLVDU22R2_2110_100">
    <p name="templateType">5GControlPlane</p>
-   <p name="tnlDN">MRBTS-5222/TNLSVC-1/TNL-2</p>
+   <p name="tnlDN">MRBTS-3519/TNLSVC-1/TNL-2</p>
    <p name="userLabel">TRUE</p>
   </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNLTEMPLATE" distName="MRBTS-5222/TNLSVC-1/TNLTEMPLATE-4" operation="create" version="TNLVDU22R2_2110_100">
+  <managedObject class="com.nokia.srbts.tnl:TNLTEMPLATE" distName="MRBTS-3519/TNLSVC-1/TNLTEMPLATE-8" operation="create" version="TNLVDU22R2_2110_100">
    <p name="templateType">5GUserPlane</p>
-   <p name="tnlDN">MRBTS-5222/TNLSVC-1/TNL-3</p>
-   <p name="userLabel">TRUE</p>
-  </managedObject>
-  <managedObject class="com.nokia.srbts.tnl:TNLTEMPLATE" distName="MRBTS-5222/TNLSVC-1/TNLTEMPLATE-5" operation="create" version="TNLVDU22R2_2110_100">
-   <p name="templateType">5GUserPlane</p>
-   <p name="tnlDN">MRBTS-5222/TNLSVC-1/TNL-3</p>
+   <p name="tnlDN">MRBTS-3519/TNLSVC-1/TNL-3</p>
    <p name="userLabel">TRUE</p>
   </managedObject>
  </cmData>
