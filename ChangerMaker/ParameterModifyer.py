@@ -72,7 +72,6 @@ class ParameterModifyer():
                             continue
                         targetDict = self.findName(targetDict,k,True,num)
                         # 传入方法名，返回对应路径下，对应名称的字典
-                        print(targetDict)
                         if targetDict:
                             targetDict['#text'] = v
                         else :
@@ -122,10 +121,8 @@ class ParameterModifyer():
                             # 分别获取路径名，参数名和对应的值
                             targetDict = self.findDistName(self._dict,distName)
                             # 传入路径名，返回对应路径名的字典（或者ID）
-                            print(targetDict)
                             targetDict = self.findName(targetDict,k,True,num)
                             # 传入方法名，返回对应路径下，对应名称的字典
-                            print(targetDict)
                         if  targetDict:
                             element[distName][k] = targetDict['#text']
                         else :
@@ -242,15 +239,12 @@ class ParameterModifyer():
         #         if SelectDicit[i]['@name'] == Name:
         #             return i 
         if 'p' in parameterDict.keys():
-            print(parameterDict['p'])
             if isinstance(parameterDict['p'],list):
                 for i in range (0,len(parameterDict['p'])):
                     if parameterDict['p'][i]['@name'] == Name:
-                        print('b')
                         return parameterDict['p'][i]
             elif isinstance(parameterDict['p'],dict):
                 if parameterDict['p']['@name'] == Name:
-                        print('a')
                         return parameterDict['p']
             else :
                 print("未找到对应参数")
@@ -259,15 +253,23 @@ class ParameterModifyer():
             NameDict = parameterDict['list']['item']
             if ListOption:
                 NameDict = parameterDict['list']['item'][num]['p']
-                for i in range (0,len(NameDict)):
-                    if NameDict[i]['@name'] == Name:
-                        return NameDict[i]
+                if isinstance(NameDict,list):
+                    for i in range (0,len(NameDict)):
+                        if NameDict[i]['@name'] == Name:
+                            return NameDict[i]
+                elif isinstance(NameDict,dict):
+                    if NameDict['@name'] == Name:
+                            return NameDict
             elif not ListOption:
-                print(parameterDict['list']['item'])
                 NameDict = parameterDict['list']['item']['p']
-                for i in range (0,len(NameDict)):
-                    if NameDict[i]['@name'] == Name:
-                        return NameDict[i]
+                if isinstance(NameDict,list):
+                    for i in range (0,len(NameDict)):
+                        if NameDict[i]['@name'] == Name:
+                            return NameDict[i]
+                elif isinstance(NameDict,dict):
+                    if NameDict['@name'] == Name :
+                            return NameDict
+
             else :
                 print("未找到对应参数")
                 return 0

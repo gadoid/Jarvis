@@ -3,6 +3,7 @@ import re;
 import json
 import os 
 import time
+import copy
 from FileResolver import FileResolver
 
 
@@ -185,6 +186,7 @@ class JarvisToolsBox():
             elif isinstance(NameDict,dict):
                 NameDict = parameterDict['list']['item']
                 if isinstance(NameDict,list):
+                    itemlist = []
                     for num in range (0,len(NameDict)):
                         NameDict = parameterDict['list']['item'][num]['p']
                         if isinstance(NameDict,list):
@@ -197,6 +199,8 @@ class JarvisToolsBox():
                                 print(item)
                                 print("22222222222222222222222")
                                 distDict[item['@name']] = item['#text']
+                        itemlist.append(copy.deepcopy(distDict))
+                    distDict = itemlist
                 elif isinstance(NameDict,list):
                     NameDict = parameterDict['list']['item']['p']
                     for item in NameDict.items():
