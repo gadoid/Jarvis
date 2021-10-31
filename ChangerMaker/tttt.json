@@ -587,7 +587,7 @@
         "uniqueIpAddressIdentifier": "F1-C"
     },
     "MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPRT-1": {
-        "destIpAddr": "10.106.254.5",
+        "destIpAddr": "255555",
         "destinationIpPrefixLength": "32",
         "gateway": "10.57.170.1"
     },

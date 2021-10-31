@@ -125,10 +125,91 @@ class JarvisToolsBox():
         else :
             return print("Wrong Mode Option")
 
+    @staticmethod
+    def configJsonGenerte(file):
+        filedict = FileResolver.dictMaker(file)
+        listdict = {}
+        ConfigList = filedict["raml"]["cmData"]["managedObject"]
+        for item in ConfigList :
+            print(item["@distName"])
+            listdict[item["@distName"]] = JarvisToolsBox.findConfiglist(item)
+        with open ("tttt.json","w") as ob :
+            ob.write(FileResolver.jsonMaker(listdict))
+        print(os.getcwd())
+    
+    @staticmethod
+    def findConfiglist(parameterDict,ListOption=False,num=0,RDict=True):
+        distDict = {}
+
+    # SelectDicit = a["raml"]["cmData"]["managedObject"][distNameId]
+    # if 'p' in SelectDicit.keys():
+    #     for i in range (0,len(SelectDicit['p'])):
+    #         if SelectDicit['p'][i]['@name'] == Name:
+    #             return i 
+    # elif 'list' in SelectDicit.keys():
+    #     SelectDicit = SelectDicit['list']['item']['p']
+    #     for i in range (0,len(SelectDicit)):
+    #         if SelectDicit[i]['@name'] == Name:
+    #             return i 
+        if 'p' in parameterDict.keys():
+            if isinstance(parameterDict['p'],dict):
+                distDict[parameterDict['p']['@name']] = parameterDict['p']['#text']
+            elif isinstance(parameterDict['p'],list):
+                for item in parameterDict['p']:
+                    distDict[item['@name']] = item['#text']
+        elif 'list' in parameterDict.keys():
+            NameDict = parameterDict['list']
+            if isinstance(NameDict,list):
+                for num0 in range (0,len(NameDict)):
+                    NameDict = parameterDict['list'][num0]
+                    if isinstance(NameDict,list):
+                        for num in range (0,len(NameDict)):
+                            if isinstance(NameDict,list):
+                                NameDict = parameterDict['list'][num0]['item'][num]['p']
+                                print(NameDict)
+                                for item in NameDict:
+                                    print(item)
+                                    print("22222222222222222222222")
+                                    distDict[item['@name']] = item['#text']
+                            elif isinstance(NameDict,dict):
+                                for item in NameDict.items():
+                                    print(item)
+                                    print("22222222222222222222222")
+                                    distDict[item['@name']] = item['#text']
+                    elif isinstance(NameDict,list):
+                        NameDict = parameterDict['list']['item']['p']
+                        for item in NameDict.items():
+                            print(item)
+                            print("333333333333333333333")
+                            distDict[item['@name']] = item['#text']
+            elif isinstance(NameDict,dict):
+                NameDict = parameterDict['list']['item']
+                if isinstance(NameDict,list):
+                    for num in range (0,len(NameDict)):
+                        NameDict = parameterDict['list']['item'][num]['p']
+                        if isinstance(NameDict,list):
+                            for item in NameDict:
+                                print(item)
+                                print("22222222222222222222222")
+                                distDict[item['@name']] = item['#text']
+                        elif isinstance(NameDict,dict):
+                            for item in NameDict.items():
+                                print(item)
+                                print("22222222222222222222222")
+                                distDict[item['@name']] = item['#text']
+                elif isinstance(NameDict,list):
+                    NameDict = parameterDict['list']['item']['p']
+                    for item in NameDict.items():
+                        print(item)
+                        print("333333333333333333333")
+                        distDict[item['@name']] = item['#text']
+        return distDict
+
 
 if __name__ == "__main__" :
     #JarvisToolsBox.changeBtsId("result.json","config.json")
     #JarvisToolsBox.ParmeterMerge("test.xml","test1.xml",backup=True,new=True)
-    JarvisToolsBox.changeBtsId("test2.xml","test.xml")
-    JarvisToolsBox.fitId("test.xml","test2.xml")
-    JarvisToolsBox.fitId("test2.xml","test1.xml")
+    # JarvisToolsBox.changeBtsId("test2.xml","test.xml")
+    # JarvisToolsBox.fitId("test.xml","test2.xml")
+    # JarvisToolsBox.fitId("test2.xml","test1.xml")
+    JarvisToolsBox.configJsonGenerte("test2.xml")

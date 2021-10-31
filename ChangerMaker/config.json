@@ -1,23 +1,1273 @@
-[
-    {
-        "MRBTS-3519/TNLSVC-1/TNL-2/IPNO-1/IPRT-1" : [{
-            "destIpAddr": "10.110.95.16" ,
-            "destinationIpPrefixLength": "2",
-            "gateway": "3",
-            "preference": "4"
-        },
-        {
-            "destIpAddr": "10.110.95.17" ,
-            "destinationIpPrefixLength": "2",
-            "gateway": "3",
-            "preference": "4"
-        }
-    ]
+[{
+    "MRBTS-5222": {
+        "btsName": "TL102_CU"
     },
-    {
-        "MRBTS-3519/TNLSVC-1/TNLTEMPLATE-8" : {
-            "templateType": "5GSB"
-        }
+    "MRBTS-5222/MNL-1": {
+        "productVariantPlanned": "5gCU",
+        "vnfIpAddress": "0"
+    },
+    "MRBTS-5222/MNL-1/AMGR-1": {
+        "btsEMRestrictedAccess": "false",
+        "checkCnumPasswdExpiry": "false",
+        "enableDefaultPasswdAlarm": "false",
+        "minNonAlphaNumInPassword": "1",
+        "minPasswordLength": "8"
+    },
+    "MRBTS-5222/MNL-1/AMGR-1/LUAC-1": {
+        "appAdmActivated": "true",
+        "appAdmLocalPasswdLastChangedTime": "01.01.1970 UTC+00:00",
+        "btsAccountLockoutDuration": "60",
+        "btsFailedLoginCountingPeriod": "5",
+        "btsMaxFailedLoginAttempts": "10",
+        "btsSessionLoginDelay": "1",
+        "jwtExpirationTime": "60",
+        "localPasswdExpiryPeriod": "90",
+        "localPasswdWarningPeriod": "80",
+        "readOnlyActivated": "true",
+        "readOnlyLocalPasswdLastChangedTime": "01.01.1970 UTC+00:00",
+        "secAdmActivated": "true",
+        "secAdmLocalPasswdLastChangedTime": "01.01.1970 UTC+00:00"
+    },
+    "MRBTS-5222/MNL-1/CERTH-1": {},
+    "MRBTS-5222/MNL-1/CERTH-1/CMP-1": {
+        "caCertificateUpdateTime": "90",
+        "neCertificateUpdateTime": "30",
+        "serverHost": "10.62.65.164",
+        "serverPath": "pkix",
+        "serverPort": "1"
+    },
+    "MRBTS-5222/MNL-1/CERTH-1/CRLH-1": {
+        "distributionPointSource": "Certificate_extension",
+        "updatePeriod": "24",
+        "usageEnabled": "Enabled"
+    },
+    "MRBTS-5222/MNL-1/CMD-1": {},
+    "MRBTS-5222/MNL-1/CMD-1/SWRESETREQ-1": {
+        "swResetLevel": "btsReset"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1": {
+        "redundancyRole": "standalone",
+        "targetDNType": "VM"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/CERTHENT-1": {},
+    "MRBTS-5222/MNL-1/MNLENT-1/FEATCADM-1": {
+        "actAldSwUpdate": "false",
+        "actAntennaPathDelayMeasurement": "false",
+        "actAsi": "false",
+        "actCli": "true",
+        "actDhcp": "disableAll",
+        "actDtPim": "false",
+        "actDualStackIpV4V6ForMplane": "false",
+        "actFaultSignature": "false",
+        "actMultiCablesForOTN": "false",
+        "actObsaiOTNRecovery": "false",
+        "actPimTesting": "false",
+        "actPowerMeter": "false",
+        "actRemoteRfDiag": "false",
+        "actRfChaining": "false",
+        "actRfiTesting": "false",
+        "actRxMonitoring": "false",
+        "actSWRollbackReject": "false",
+        "actSyncEGen": "false",
+        "actTransportConfigFallback": "false",
+        "otnCpriRecoveryPeriod": "500",
+        "otnObsaiRecoveryPeriod": "500",
+        "rfSharingEnabled": "false"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/FMCADM-1": {
+        "actCategoryAlarms": "true",
+        "actForceAutoReset": "false",
+        "actForceUnitAutoReset": "false"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/MPLANENW-1": {
+        "actEnableTLSv13": "false",
+        "mPlaneDscp": "30",
+        "mPlaneIpv4AddressDN": "MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPIF-1/IPADDRESSV4-1",
+        "oamTls": "off",
+        "tls12CbcCipherDisabled": "true",
+        "tls12Enabled": "true",
+        "tls12RsaKExDisabled": "false"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/PMCADM-1": {
+        "reportingIntervalPm": "60min"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/PMMNL-1": {
+        "mtSBTSSmEnergyMonitoring": "disabled"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/SECADM-1": {
+        "loginBannerText": "You are about to access a private system. This system is for the use of authorized users only. All connections are logged to the extent and by means acceptable by the local legislation. Any unauthorized access or access attempts may be punished to the fullest extent possible under the applicable local legislation.",
+        "passwdHistoryLength": "0"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/TAC-1": {},
+    "MRBTS-5222/MNL-1/MNLENT-1/TAC-1/LTAC-1": {
+        "tacLimitGbrEmergency": "1000000",
+        "tacLimitGbrHandover": "1000000",
+        "tacLimitGbrNormal": "1000000",
+        "tacOverbookingLimit": "0",
+        "transportNwId": "1"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/TEST-1": {},
+    "MRBTS-5222/MNL-1/MNLENT-1/TRBLCADM-1": {
+        "actCoreDumpFileCollection": "true",
+        "actInternalTrace": "true",
+        "actRemoteSyslogTransmission": "false",
+        "diagSnapDestination": "netact",
+        "snapshotUploadDelayForFault6450": "0"
+    },
+    "MRBTS-5222/NRBTS-5222": {
+        "actA2SgnbRelease": "false",
+        "actAmfPlannedRemoval": "false",
+        "actBcsCheck": "enabled_FR1",
+        "actBlacklistingEutranCell": "false",
+        "actCMAS": "false",
+        "actCarrierAggregation": "false",
+        "actCellTraceReport": "false",
+        "actConflictConfiguration": "false",
+        "actCpclResiliency": "false",
+        "actCpnrtResiliency": "false",
+        "actCuOvlProt": "false",
+        "actDDDSPeriodOptimization": "false",
+        "actDataDuplicationForMobility": "false",
+        "actDataDuplicationForSAMobility": "false",
+        "actDirectSnTermBearEstSnModNSA": "false",
+        "actDlDataForwardingX2": "true",
+        "actDlDataForwardingX2Limit": "false",
+        "actDualSectorRu": "false",
+        "actETWS": "false",
+        "actEmergencyFallback": "false",
+        "actEnhancedX2LinkSupervision": "false",
+        "actGeneralConnectivityBronze": "true",
+        "actGeneralConnectivityGold": "false",
+        "actGeneralConnectivitySilver": "true",
+        "actHoOptimizationCa": "false",
+        "actIdleMMSteering": "false",
+        "actInactDetNSAUe": "false",
+        "actIncXn": "false",
+        "actInterFreqHoSA": "false",
+        "actInterFreqInterGnbMobilityNSA": "false",
+        "actInterFreqIntraGnbMobilityNSA": "false",
+        "actInterMeNBMobility": "false",
+        "actInterRatHoFromEutraToSA": "false",
+        "actInterRatHoSA": "false",
+        "actInterRatHoSADlDataForward": "false",
+        "actIntraFreqHoSA": "false",
+        "actIntraFreqInterGnbMobilityNSA3x": "false",
+        "actIntraFreqIntraGnbMobilityNSA": "false",
+        "actIntraMeNBMobility": "false",
+        "actLocationReportingSA": "false",
+        "actMFBIEutra": "false",
+        "actMeasBasedSCellAddition": "false",
+        "actMeasBasedSCellAdditionNsa": "false",
+        "actMobilityProfile": "false",
+        "actMobilityProfileReSelect": "false",
+        "actMobilityRetryToSecondBestCell": "false",
+        "actMultiDrbNSA": "false",
+        "actMultiFrequencyBandIndicatorNRSupport": "false",
+        "actMultipleDedicatedBWPs": "false",
+        "actNgcFlexSaMode": "false",
+        "actNonGbrServiceDiff": "false",
+        "actNormVCFallback": "false",
+        "actNrNgHoSA": "false",
+        "actNrpmqapProfiles": "false",
+        "actNsaSlice": "false",
+        "actNsaUeBasedAnrNr": "false",
+        "actOAMResiliency": "true",
+        "actPCMDReport": "false",
+        "actPaging": "true",
+        "actPrioVoiceTraffic": "false",
+        "actRanSharing": "false",
+        "actRedirect": "false",
+        "actRfspIndex": "false",
+        "actRohc": "false",
+        "actRrcInactiveState": "false",
+        "actSPID": "false",
+        "actSaUeBasedAnrNr": "false",
+        "actSecDataUsageRep": "false",
+        "actSrvcAvaReporting": "false",
+        "actTrsSepaNSARanSharing": "false",
+        "actTrsSepaSARanSharing": "false",
+        "actUESpecificULResCoordination": "false",
+        "actUeCapaEnquiryHoCa": "false",
+        "actUeDeltaConfigOptimize": "false",
+        "actUeInitRlf": "true",
+        "actVemResiliency": "true",
+        "actX2ConfigTransfer": "false",
+        "activityNotificationLevelSA": "ue",
+        "cPlaneDscp": "46",
+        "caConfigurationSupport": "none",
+        "cpclRedundancyLevel": "0",
+        "drbInactivityTimerSA": "10",
+        "drbInactivityTimerSA5qi1": "0",
+        "drbInactivityTimerSA5qi5": "0",
+        "drxDefaultPaging": "v256",
+        "e1NbResetRetryForFault": "3",
+        "e1SetupTimeToWait": "10s",
+        "enDcX2SetupReqTmr": "300",
+        "endMarkerTimer": "2000",
+        "f1MaxParallelIncSetup": "1",
+        "f1NbResetRetryForFault": "1",
+        "f1ResetRspTmr": "60",
+        "forceSingleTxModeSupportEnabled": "false",
+        "gNbCuName": "TL102_CU",
+        "gNbCuType": "NSA",
+        "gNbIdLength": "22",
+        "gtpuManagementDscp": "46",
+        "keyRefrMarg": "200000",
+        "maxNoCPUEVMs": "1",
+        "maxNumF1Links": "128",
+        "maxNumNrAnrMoiAllowed": "20000",
+        "maxNumOfUsersPerCpCell": "50000",
+        "maxNumX2Links": "128",
+        "maxNumXnLinks": "128",
+        "maxNumXnSetupRetry": "20",
+        "maxParallelXnSetup": "5",
+        "maxPercentageDrbOverF1UOvld": "50",
+        "maxX2CellListSize": "1000",
+        "maxX2EnDcCfUpRetry": "5",
+        "maxX2PartialResetReqRetry": "5",
+        "maxXnNgRanCfUpRetry": "5",
+        "mcc": "262",
+        "mnc": "3",
+        "mncLength": "2",
+        "ngSetupRespTmr": "60",
+        "ngUeRetentionEnabled": "false",
+        "ngUeRetentionTmr": "10",
+        "nsaActivityNotificationLevel": "ue",
+        "nsaCellActivationAlarmTimer": "600",
+        "nsaInactivityTimer": "100",
+        "nullFallback": "true",
+        "pduSessionEndMarkerTimer": "3000",
+        "periodicalDataUsageReportTimer": "60",
+        "retryXnSetupTmr": "60",
+        "rrcReestabTypeSA": "deactivated",
+        "sCellMeasCycle": "sf320",
+        "saCellActivationAlarmTimer": "600",
+        "sgnbRelForNoHandoverEnabled": "true",
+        "shutdownNoX2TrafficTmr": "24",
+        "shutdownNoXnTrafficTmr": "24",
+        "shutdownNogNBCellTmr": "0",
+        "singleTXModeSupportEnabled": "true",
+        "slotLAUseHighBlerAckNack": "true",
+        "slotLAUseLowBlerAckNack": "true",
+        "srb1Config": "nokiaDefault",
+        "srb3SupportEnabled": "false",
+        "srbInactivityTimerSA": "60",
+        "srvcDownDetectTimer": "15",
+        "tDCoverall": "2000",
+        "tDiscardLteTimer": "300",
+        "tNgRelocOverall": "2000",
+        "tNgRelocPrep": "2000",
+        "tWaitingRlRecover": "500ms",
+        "timerE1BearerProcGuard": "25",
+        "timerE1ResetGuard": "25",
+        "timerF1UeProcGuard": "2500",
+        "timerHOGuard": "2500",
+        "timerNGSignalingConnGuard": "2500",
+        "timerRRCGuard": "2500",
+        "timerRejectWait": "8",
+        "timerX2DataFwdGuard": "250",
+        "timerX2UeProcGuard": "2000",
+        "timerXnUeProcGuard": "2500",
+        "timerf1NonUeProcGuard": "60",
+        "variableSourceUdpPortEnabled": "false",
+        "waitForRecovBeforeCellBarringTimer": "300",
+        "x2EnDcCfUpNbInfoBackOffTmr": "300",
+        "x2EnDcCfUpRdmDelayTmr": "3",
+        "x2EnDcCfUpRspTmr": "10",
+        "x2EndMarkerTimer": "2000",
+        "x2LinkReestabTmr": "15",
+        "x2LinkSupervisionTmr": "300",
+        "x2PartialResetCnfTmr": "10",
+        "x2ResetRspTmr": "10",
+        "xnLinkReestabTmr": "60",
+        "xnNgRanCfUpNbInfoBackOffTmr": "300",
+        "xnNgRanCfUpRdmDelayTmr": "3",
+        "xnNgRanCfUpRspTmr": "10",
+        "xnResetRespTmr": "60",
+        "xnSetupReqTmr": "60",
+        "xnSetupRespTmr": "60"
+    },
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-1": {
+        "bwpType": "initial"
+    },
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-2": {
+        "bwpType": "dedicated"
+    },
+    "MRBTS-5222/NRBTS-5222/LTEENB-0": {
+        "x2LinkLock": "unlocked"
+    },
+    "MRBTS-5222/NRBTS-5222/NRCELL-1": {
+        "a1MeashoEnabled": "none",
+        "a1MeashoEnabledSA": "none",
+        "a2MeashoEnabled": "none",
+        "a3MeasEnabled": "none",
+        "a5MeasEnabled": "none",
+        "actAperCsi": "false",
+        "actCDrx": "false",
+        "actCDrxVoNR": "false",
+        "actCceSplit": "false",
+        "actCsiMeasEthFlowControl": "PastTputBased",
+        "actDownSampling": "false",
+        "actEmergencyCall": "false",
+        "actGBRAdmissionControl": "off",
+        "actVoNrMobilityThresholds": "off",
+        "addNumOfGBRBearers": "0",
+        "administrativeState": "Unlocked",
+        "ccLoadThreshold": "30",
+        "cellDepType": "NSA",
+        "cellIndividualSsbRsrpOffset": "0dB",
+        "cellIndividualSsbRsrqOffset": "0dB",
+        "cellReselectionPriority": "0",
+        "cellTechnology": "TDD",
+        "chBw": "100MHz",
+        "dedicatedSib1": "false",
+        "emergencyCallFails": "false",
+        "freqBandIndicatorNR": "257",
+        "lcrId": "1",
+        "lteNrDssMode": "none",
+        "maxNumOfCaUsersNRCell": "250",
+        "maxNumOfGBRBearersSA": "10",
+        "maxNumOfNonGBRBearersSA": "550",
+        "maxNumOfRrcSA": "275",
+        "maxNumOfSCellAlloc": "250",
+        "maxNumOfUsersNRCell": "275",
+        "maxNumOfUsersPerCell": "275",
+        "nUeCtxForCceSplitDeactivation": "0",
+        "nrarfcn": "2076443",
+        "pduHoSliceRelease": "false",
+        "physCellId": "50",
+        "rangeExtension": "1x_range",
+        "reportAmount": "r4",
+        "reportAmountCA": "r2",
+        "reportInterval": "ms120",
+        "reportIntervalCA": "ms1024",
+        "reportOnLeave": "false",
+        "voiceFBMode": "disabled",
+        "weightForSCellSelection": "50"
+    },
+    "MRBTS-5222/NRBTS-5222/NRCELLGRP-0": {
+        "addNumOfHoUsers": "0",
+        "addNumOfNonGBRBearersCGRPSAHo": "0",
+        "addNumOfNonGBRBearersHo": "0",
+        "addNumOfRrcCGRPSAHo": "0",
+        "maxNumOfNonGBRBearers": "500",
+        "maxNumOfNonGBRBearersCGRPSA": "500",
+        "maxNumOfRrcCGRPSA": "250",
+        "maxNumOfUsers": "500",
+        "scs": "120 KHz",
+        "spCellChangeEnabled": "false"
+    },
+    "MRBTS-5222/NRBTS-5222/NRCUUP-1": {
+        "e1NbSetupRetryForFault": "3",
+        "e1SetupRspTmr": "60",
+        "gNbCuUpId": "0"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-1": {
+        "actDddsReduction": "false",
+        "actLostPduFastRetx": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbPdcpDN": "MRBTS-5222/NRBTS-5222/NRDRB_PDCP-1",
+        "numSduDiscard": "1",
+        "queuingDelayDiscardEnabled": "true",
+        "queuingDelaySduDiscardThreshold": "50",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "sduDiscardIntervalTmr": "100",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_PDCP-1": {
+        "cuFlowControlProfId": "1",
+        "pdcpBufDiscardEnabled": "true",
+        "pdcpBufDiscardThreshold": "20000",
+        "tReorderingDl": "ms100",
+        "tReorderingUl": "ms100",
+        "x2FlowControlProfIdForCu": "1"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDU-1": {
+        "actConnectedModeMobilityCA": "false",
+        "actInterNumerologyCa": "false",
+        "actNonBfAndBfCa": "false",
+        "administrativeState": "Unlocked",
+        "flexibleCAMode": "MixedCAMode",
+        "gNbDuId": "0"
+    },
+    "MRBTS-5222/NRBTS-5222/NRPLMN-1": {
+        "mcc": "262",
+        "mnc": "3",
+        "mncLength": "2"
+    },
+    "MRBTS-5222/NRBTS-5222/NRPMRNL-1": {
+        "miNrCaCu": "15min",
+        "miNrCellAvailability": "15min",
+        "miNrE1InterfaceBts": "15min",
+        "miNrE1InterfaceCuCpNsa": "15min",
+        "miNrE1InterfaceCuCpSa": "15min",
+        "miNrE1InterfaceCuUp": "15min",
+        "miNrE1InterfaceCuUpNsa": "15min",
+        "miNrE1InterfaceCuUpSa": "15min",
+        "miNrF1CC": "15min",
+        "miNrF1UB1Interface": "disabled",
+        "miNrF1UCInterface": "15min",
+        "miNrF1UU": "15min",
+        "miNrIfPsCellChange": "15min",
+        "miNrLteMobilityReport": "15min",
+        "miNrMobilityReport": "15min",
+        "miNrMobilityReportCu": "15min",
+        "miNrNAECL": "15min",
+        "miNrNGCC": "15min",
+        "miNrNREMO": "15min",
+        "miNrNRMOP": "disabled",
+        "miNrNRPFW": "disabled",
+        "miNrNTRAF": "15min",
+        "miNrNgInterface": "15min",
+        "miNrNgInterfaceNrpmqap": "disabled",
+        "miNrNgUReport": "15min",
+        "miNrNgcFlexInterface": "disabled",
+        "miNrNsaAcCuNrpmqap": "disabled",
+        "miNrPDCP1Report": "15min",
+        "miNrPDCP2Report": "15min",
+        "miNrPdcpC": "15min",
+        "miNrPsCellChange": "15min",
+        "miNrRANS": "15min",
+        "miNrRRCC": "15min",
+        "miNrRSACU": "15min",
+        "miNrRSANB": "15min",
+        "miNrRSUP": "15min",
+        "miNrRacCu": "15min",
+        "miNrRadBearer": "15min",
+        "miNrRelReportCu": "disabled",
+        "miNrResourceUtilizationPerCell": "disabled",
+        "miNrRlfPerCell": "15min",
+        "miNrS1UInterface": "15min",
+        "miNrSaCuNrpmqap": "disabled",
+        "miNrSlicingCuCp": "15min",
+        "miNrSlicingCuUp": "15min",
+        "miNrSpareBts": "disabled",
+        "miNrSpareCellCU": "disabled",
+        "miNrSpareCellCUPlmn": "disabled",
+        "miNrSpareCellDU": "disabled",
+        "miNrSpareCellDUPlmn": "disabled",
+        "miNrSrb3C": "15min",
+        "miNrSrvcAvaStats": "15min",
+        "miNrTrf": "disabled",
+        "miNrUeState": "15min",
+        "miNrX2CB": "15min",
+        "miNrX2CC": "15min",
+        "miNrX2UB1Interface": "disabled",
+        "miNrX2UInterface": "15min",
+        "miNrX2ccNrpmqap": "disabled",
+        "miNrXnCCInterface": "15min",
+        "miNrXnInterface": "15min",
+        "miNrXnUCInterface": "15min",
+        "tmpMiNrParam1": "disabled",
+        "tmpMiNrParam10": "disabled",
+        "tmpMiNrParam2": "disabled",
+        "tmpMiNrParam3": "disabled",
+        "tmpMiNrParam4": "disabled",
+        "tmpMiNrParam5": "disabled",
+        "tmpMiNrParam6": "disabled",
+        "tmpMiNrParam7": "disabled",
+        "tmpMiNrParam8": "disabled",
+        "tmpMiNrParam9": "disabled"
+    },
+    "MRBTS-5222/NRBTS-5222/NRSCTP-1": {
+        "e1SctpProfileIdOfCucp": "1",
+        "e1SctpProfileIdOfCuup": "1",
+        "f1SctpProfileIdOfCu": "1",
+        "x2SctpProfileId": "1"
+    },
+    "MRBTS-5222/NRBTS-5222/NRSYSINFO_PROFILE-1": {
+        "qHyst": "dB2",
+        "tReselectionEutra": "1",
+        "threshServingLowP": "1"
+    },
+    "MRBTS-5222/NRBTS-5222/NRSYSINFO_PROFILE-1/NRIAFIM-1": {
+        "qRxLevMin": "-30",
+        "sIntraSearchP": "1",
+        "tReselectionNr": "1"
+    },
+    "MRBTS-5222/NRBTS-5222/SERVEDAMF-1": {
+        "administrativeState": "Unlocked",
+        "amfIPAddress": "0.0.0.0",
+        "defaultAMF": "true"
+    },
+    "MRBTS-5222/NRBTS-5222/SNSSAI-1": {
+        "administrativeState": "Unlocked",
+        "sst": "1"
+    },
+    "MRBTS-5222/NRBTS-5222/TRACKINGAREA-1": {
+        "fiveGsTac": "20000"
+    },
+    "MRBTS-5222/TNLSVC-1": {},
+    "MRBTS-5222/TNLSVC-1/PMTNLINT-1": {
+        "ethernetLinkInterval": "15min",
+        "ipFilteringInterval": "15min",
+        "ipInterfaceStatisticsInterval": "disabled",
+        "ipNodeStatisticsInterval": "15min",
+        "ipSecSaStatisticsInterval": "15min",
+        "ipSecStatisticsInterval": "15min",
+        "ipV4AddressStatisticsInterval": "disabled",
+        "ipV6AddressStatisticsInterval": "disabled",
+        "sctpStatisticsInterval": "15min",
+        "tcpUdpStatisticsInterval": "15min",
+        "vlanStatisticsInterval": "15min"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1": {
+        "templateUsage": "TRUE"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHLK-1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1/VLANIF-3": {
+        "vlanIfName": "oamvlan"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHLK-1": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "oam"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1": {
+        "icmpDscp": "10",
+        "icmpResponseEnabled": "true",
+        "ndMldDscp": "56"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPIF-1": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1/VLANIF-3",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPIF-1/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "certman-server oam"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPRT-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPRTV6-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/QOS-1": {
+        "arpPcp": "7"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2": {
+        "templateUsage": "TRUE"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHLK-1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1/VLANIF-1": {
+        "vlanIfName": "f1c"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1/VLANIF-3": {
+        "vlanIfName": "x2c"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHLK-1": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "mhc"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1": {
+        "icmpDscp": "10",
+        "icmpResponseEnabled": "true",
+        "ndMldDscp": "56"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPIF-1": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1/VLANIF-3",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPIF-1/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "X2-C"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPIF-2": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-2/ETHSVC-1/ETHIF-1/VLANIF-1",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPIF-2/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "F1-C"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPRT-1": {
+        "destIpAddr": "255555",
+        "destinationIpPrefixLength": "32",
+        "gateway": "10.57.170.1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/IPRTV6-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-2/IPNO-1/QOS-1": {
+        "arpPcp": "7"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3": {
+        "templateUsage": "TRUE"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1/VLANIF-1": {
+        "vlanIfName": "f1u"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1/VLANIF-3": {
+        "vlanIfName": "x2u"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-3": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-3"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-3/VLANIF-4": {
+        "userLabel": "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-3/VLANIF-4",
+        "vlanIfName": "s1u"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-1": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "mhu"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-3": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "bhu"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1": {
+        "icmpDscp": "10",
+        "icmpResponseEnabled": "true",
+        "ndMldDscp": "56"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPIF-1": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1/VLANIF-3",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPIF-1/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "X2-U"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPIF-2": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-1/VLANIF-1",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPIF-2/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "F1-U Tracing"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPIF-3": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-3/VLANIF-4",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPIF-3/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "S1-U"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPRT-1": {
+        "destIpAddr": "10.107.199.0",
+        "destinationIpPrefixLength": "24",
+        "gateway": "10.57.170.49",
+        "preference": "2"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/IPRTV6-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-3/IPNO-1/QOS-1": {
+        "arpPcp": "7"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4": {
+        "templateUsage": "FALSE"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHLK-1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1/VLANIF-3": {
+        "vlanIfName": "oamvlan"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHLK-1": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "oam"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1": {
+        "icmpDscp": "10",
+        "icmpResponseEnabled": "true",
+        "ndMldDscp": "56"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPIF-1": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1/VLANIF-3",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPIF-1/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "certman-server oam"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPRT-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPRTV6-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/QOS-1": {
+        "arpPcp": "7"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5": {
+        "templateUsage": "FALSE"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHLK-1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1/VLANIF-1": {
+        "vlanIfName": "f1c"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1/VLANIF-3": {
+        "vlanIfName": "x2c"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHLK-1": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "mhc"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1": {
+        "icmpDscp": "10",
+        "icmpResponseEnabled": "true",
+        "ndMldDscp": "56"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPIF-1": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1/VLANIF-3",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPIF-1/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "X2-C"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPIF-2": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-5/ETHSVC-1/ETHIF-1/VLANIF-1",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPIF-2/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "F1-C"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPRT-1": {
+        "destIpAddr": "10.106.254.5",
+        "destinationIpPrefixLength": "32",
+        "gateway": "10.57.170.1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/IPRTV6-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-5/IPNO-1/QOS-1": {
+        "arpPcp": "7"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6": {
+        "templateUsage": "FALSE"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1/VLANIF-1": {
+        "vlanIfName": "f1u"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1/VLANIF-3": {
+        "vlanIfName": "x2u"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-3": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-3"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-3/VLANIF-4": {
+        "userLabel": "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-3/VLANIF-4",
+        "vlanIfName": "s1u"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-1": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "mhu"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-3": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "bhu"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1": {
+        "icmpDscp": "10",
+        "icmpResponseEnabled": "true",
+        "ndMldDscp": "56"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPIF-1": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1/VLANIF-3",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPIF-1/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "X2-U"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPIF-2": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-1/VLANIF-1",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPIF-2/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "F1-U Tracing"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPIF-3": {
+        "interfaceDN": "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-3/VLANIF-4",
+        "ipMtu": "1500"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPIF-3/IPADDRESSV4-1": {
+        "ipAddressAllocationMethod": "DISCOVERED",
+        "uniqueIpAddressIdentifier": "S1-U"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPRT-1": {
+        "destIpAddr": "10.107.199.0",
+        "destinationIpPrefixLength": "24",
+        "gateway": "10.57.170.49",
+        "preference": "2"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/IPRTV6-1": {},
+    "MRBTS-5222/TNLSVC-1/TNL-6/IPNO-1/QOS-1": {
+        "arpPcp": "7"
+    },
+    "MRBTS-5222/TNLSVC-1/TNLTEMPLATE-1": {
+        "templateType": "OAM",
+        "tnlDN": "MRBTS-5222/TNLSVC-1/TNL-1",
+        "userLabel": "TRUE"
+    },
+    "MRBTS-5222/TNLSVC-1/TNLTEMPLATE-2": {
+        "templateType": "5GControlPlane",
+        "tnlDN": "MRBTS-5222/TNLSVC-1/TNL-2",
+        "userLabel": "TRUE"
+    },
+    "MRBTS-5222/TNLSVC-1/TNLTEMPLATE-3": {
+        "templateType": "5GUserPlane",
+        "tnlDN": "MRBTS-5222/TNLSVC-1/TNL-3",
+        "userLabel": "TRUE"
+    },
+    "MRBTS-5222/EQM-1": {},
+    "MRBTS-5222/EQM-1/APEQM-1": {
+        "aldScanningInterval": "30 sec",
+        "allowBbPoolRecoveryReset": "true",
+        "berMajorAlarmThreshold": "-12",
+        "berMinorAlarmThreshold": "0",
+        "sfpOperatorMode": "false"
+    },
+    "MRBTS-5222/EQM-1/APEQM-1/RMOD-1": {
+        "actPimCancellation": "false",
+        "actSharedRUIndControl": "false",
+        "actSnapshotCollection": "false",
+        "administrativeState": "Unlocked",
+        "alVoltHighThreshold": "570",
+        "alVoltLowThreshold": "405",
+        "alVoltUnstableThreshold": "5",
+        "cCEnabled": "false",
+        "legacyWideCarrierMode": "false",
+        "pimCancellingEnabled": "false",
+        "prodCodePlanned": "475238A.M01",
+        "ptpSyncRepPrd": "60",
+        "serialNumberPlanned": "1M213504201"
+    },
+    "MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1": {},
+    "MRBTS-5222/EQM-1/HWTOP-1": {},
+    "MRBTS-5222/HW-1": {},
+    "MRBTS-5222/HW-1/INVUNIT-1": {},
+    "MRBTS-5222/HW-1/INVUNIT-2": {},
+    "MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1": {},
+    "MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1": {},
+    "MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1": {},
+    "MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-1": {
+        "direction": "TX",
+        "resourceDN": "MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-2": {
+        "direction": "RX",
+        "resourceDN": "MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-3": {
+        "direction": "TX",
+        "resourceDN": "MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-4": {
+        "direction": "RX",
+        "resourceDN": "MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-5": {
+        "direction": "TX",
+        "resourceDN": "MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/CELLMAPPING-1/LCELNR-1/CHANNELGROUP-1/CHANNEL-6": {
+        "direction": "TX",
+        "resourceDN": "MRBTS-5222/EQM-1/APEQM-1/RMOD-1/PHYANT-1"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/CUPLANEFHNW-1": {},
+    "MRBTS-5222/MNL-1/MNLENT-1/SYNC-1": {
+        "manualFrameTimingAdjustment": "0",
+        "profileType": "RAC"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/SYNC-2": {
+        "manualFrameTimingAdjustment": "0",
+        "profileType": "RU"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/SYNC-2/CLOCK-1": {},
+    "MRBTS-5222/MNL-1/MNLENT-1/SYNC-2/CLOCK-1/TOP-1": {
+        "topDomainNumber": "24"
+    },
+    "MRBTS-5222/MNL-1/MNLENT-1/SYNC-2/CLOCK-1/TOP-1/TOPP-1": {
+        "topEthMulticastAddress": "01-80-C2-00-00-0E",
+        "topStandardProfile": "G.8275.1"
+    },
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-0": {
+        "bwpType": "initial"
+    },
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-0/PDCCH-1": {
+        "alSelection": "static",
+        "dciDedicatedAggregationLevel": "AL4",
+        "dciPagingAggregationLevel": "AL4",
+        "dciRaCompletionAggregationLevel": "AL4",
+        "dciRaMsg2AggregationLevel": "AL4",
+        "dciSiAggregationLevel": "AL4",
+        "downgradeAL16toAL8": "notAllowed"
+    },
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-0/PDCCH-1/PDCCH_CONFIG_COMMON-1": {},
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-44": {
+        "bwpType": "dedicated"
+    },
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-44/PDCCH-1": {
+        "alSelection": "static",
+        "dciDedicatedAggregationLevel": "AL4",
+        "dciPagingAggregationLevel": "AL4",
+        "dciRaCompletionAggregationLevel": "AL4",
+        "dciRaMsg2AggregationLevel": "AL4",
+        "dciSiAggregationLevel": "AL4",
+        "downgradeAL16toAL8": "notAllowed"
+    },
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-44/PDCCH-1/PDCCH_CONFIG_COMMON-1": {},
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-44/PDCCH-1/PDCCH_CONFIG_DEDICATED-1": {},
+    "MRBTS-5222/NRBTS-5222/BWP_PROFILE-44/PDSCH-1": {
+        "pdschRat0RbgConfig": "config1"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-10": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-2",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "1",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-11": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-2",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "1",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-12": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-2",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "1",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-13": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-2",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "1",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-14": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-2",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "1",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-2": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-1",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "40",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-3": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-1",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "20",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-4": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-1",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "10",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-5": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-1",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "5",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-6": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-1",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "1",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-7": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-1",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "40",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-8": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-1",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "30",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB-9": {
+        "actDddsReduction": "false",
+        "discardTimer": "infinity",
+        "dlFlowControlAlgo": "3gppFlowControl",
+        "dscp": "0",
+        "durationThresDiscard": "50",
+        "maxDddsPeriodCpuOvld": "40",
+        "nrDrbMacDN": "MRBTS-5222/NRBTS-5222/NRDRB_MAC-1",
+        "nrDrbRlcAmDN": "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1",
+        "resType": "nonGBR",
+        "rlcMode": "RLC_AM",
+        "schedulWeight": "15",
+        "volThresDiscard": "100"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_5QI-1": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-10",
+        "nrPlmnDN": "MRBTS-5222/NRBTS-5222/NRPLMN-1"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_5QI-2": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-11",
+        "nrPlmnDN": "MRBTS-5222/NRBTS-5222/NRPLMN-2"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_5QI-3": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-12",
+        "nrPlmnDN": "MRBTS-5222/NRBTS-5222/NRPLMN-3"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_5QI-4": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-13",
+        "nrPlmnDN": "MRBTS-5222/NRBTS-5222/NRPLMN-4"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_5QI-5": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-14",
+        "nrPlmnDN": "MRBTS-5222/NRBTS-5222/NRPLMN-5"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_MAC-1": {
+        "lcgid": "1",
+        "prioritisedBitRate": "16kBps",
+        "schedulPrio": "12"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_MAC-2": {
+        "lcgid": "1",
+        "prioritisedBitRate": "16kBps",
+        "schedulPrio": "12"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_QCI-1": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-2"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_QCI-2": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-3"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_QCI-3": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-4"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_QCI-4": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-5"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_QCI-5": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-6"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_QCI-6": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-7"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_QCI-7": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-8"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_QCI-8": {
+        "nrDrbDN": "MRBTS-5222/NRBTS-5222/NRDRB-9"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-1": {
+        "dlMaxRetxThreshold": "t16",
+        "dlPollByte": "kB500",
+        "dlPollPDU": "p64",
+        "dlTPollRetr": "ms45",
+        "dlTProhib": "ms10",
+        "dlTReassembly": "ms15",
+        "dlTReassemblyIBCA": "30",
+        "duFlowControlProfId": "1",
+        "ulMaxRetxThreshold": "t16",
+        "ulPollByte": "kB500",
+        "ulPollPDU": "p64",
+        "ulTPollRetr": "ms45",
+        "ulTProhib": "ms10",
+        "ulTReassembly": "ms15"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDRB_RLC_AM-2": {
+        "dlMaxRetxThreshold": "t32",
+        "dlPollByte": "kB500",
+        "dlPollPDU": "p64",
+        "dlTPollRetr": "ms100",
+        "dlTProhib": "ms15",
+        "dlTReassembly": "ms15",
+        "dlTReassemblyIBCA": "30",
+        "duFlowControlProfId": "1",
+        "ulMaxRetxThreshold": "t32",
+        "ulPollByte": "kB500",
+        "ulPollPDU": "p64",
+        "ulTPollRetr": "ms45",
+        "ulTProhib": "ms15",
+        "ulTReassembly": "ms15"
+    },
+    "MRBTS-5222/NRBTS-5222/NRDU-1/NRCTRLTSDU-1": {},
+    "MRBTS-5222/NRBTS-5222/NRDU-1/NRECPRI-1": {
+        "uPlanePcp": "7"
+    },
+    "MRBTS-5222/NRBTS-5222/NRPLMN-2": {
+        "mcc": "0",
+        "mnc": "0",
+        "mncLength": "2"
+    },
+    "MRBTS-5222/NRBTS-5222/NRPLMN-3": {
+        "mcc": "0",
+        "mnc": "0",
+        "mncLength": "2"
+    },
+    "MRBTS-5222/NRBTS-5222/NRPLMN-4": {
+        "mcc": "0",
+        "mnc": "0",
+        "mncLength": "2"
+    },
+    "MRBTS-5222/NRBTS-5222/NRPLMN-5": {
+        "mcc": "0",
+        "mnc": "0",
+        "mncLength": "2"
+    },
+    "MRBTS-5222/NRBTS-5222/SNSSAI-2": {
+        "administrativeState": "Unlocked",
+        "sst": "128"
+    },
+    "MRBTS-5222/NRBTS-5222/SNSSAI-3": {
+        "administrativeState": "Unlocked",
+        "sd": "0",
+        "sst": "129"
+    },
+    "MRBTS-5222/NRBTS-5222/SNSSAI-4": {
+        "administrativeState": "Unlocked",
+        "sst": "130"
+    },
+    "MRBTS-5222/NRBTS-5222/SNSSAI-5": {
+        "administrativeState": "Unlocked",
+        "sst": "131"
+    },
+    "MRBTS-5222/NRBTS-5222/TRACKINGAREA-0": {
+        "fiveGsTac": "1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1/ETHSVC-1/ETHIF-1/VLANIF-1": {
+        "vlanIfName": "mcplane"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-1/IPNO-1/IPRT-2": {},
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-2": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-2"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHIF-2/VLANIF-1": {
+        "vlanIfName": "fhucplane1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-3/ETHSVC-1/ETHLK-2": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "fhuc"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4/ETHSVC-1/ETHIF-1/VLANIF-1": {
+        "vlanIfName": "mcplane"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-4/IPNO-1/IPRT-2": {},
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-2": {
+        "linkSelectorDN": "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-2"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHIF-2/VLANIF-1": {
+        "vlanIfName": "fhucplane1"
+    },
+    "MRBTS-5222/TNLSVC-1/TNL-6/ETHSVC-1/ETHLK-2": {
+        "administrativeState": "unlocked",
+        "underLyingInterface": "fhuc"
+    },
+    "MRBTS-5222/TNLSVC-1/TNLTEMPLATE-8": {
+        "templateType": "5GUserPlane",
+        "tnlDN": "MRBTS-5222/TNLSVC-1/TNL-3",
+        "userLabel": "TRUE"
     }
-
-]
+}]
