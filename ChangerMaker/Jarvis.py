@@ -1,3 +1,5 @@
+from ScfConfig import ScfConfig 
+
 class Jarvis():
     def __init__(self) -> None:
         pass
@@ -32,8 +34,8 @@ class Jarvis():
         """)
         message = input("请选择 ： ")
         if message == "1" :
-            #SCFConfig()
-            pass
+            ScfConfig().run()
+
 
     def configJsonCreate(self):
         pass

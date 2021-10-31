@@ -134,7 +134,7 @@ class JarvisToolsBox():
         for item in ConfigList :
             print(item["@distName"])
             listdict[item["@distName"]] = JarvisToolsBox.findConfiglist(item)
-        with open ("tttt.json","w") as ob :
+        with open ("config.json","w") as ob :
             ob.write(FileResolver.jsonMaker(listdict))
         print(os.getcwd())
     

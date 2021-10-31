@@ -8,7 +8,7 @@ from collections import OrderedDict
 from JarvisToolsBox import JarvisToolsBox
 
 class ParameterModifyer():
-    def __init__(self,filename,fixpalist="tttt.json") -> None:
+    def __init__(self,filename,fixpalist="config.json") -> None:
         self._dict = FileResolver.dictMaker(filename)
         # 读取SCF文件，转换为python字典
         self._configDict = FileResolver.dictMaker(fixpalist)
@@ -355,8 +355,8 @@ class ParameterModifyer():
 
 if __name__  == "__main__" :
     os.chdir("G:\Jarvis\Jarvis\ChangerMaker")
-    JarvisToolsBox.changeBtsId("test2.xml","tttt.json")
-    JarvisToolsBox.changeBtsId("test1.xml","tttt.json")
+    JarvisToolsBox.changeBtsId("test2.xml","config.json")
+    JarvisToolsBox.changeBtsId("test1.xml","config.json")
     JarvisToolsBox.ParameterMerageF2toF1("test2.xml","test1.xml")
 
     test = ParameterModifyer("test2.xml")

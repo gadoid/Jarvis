@@ -4,8 +4,9 @@ class ScfConfig:
     
     def run(self):
         while True :
-            print("""
-            1.  Config From QT
+            (r"""
+            1.  Config From QT(unprepare)
             2.  Config By Local Scf 
             3.  
             """)
+
